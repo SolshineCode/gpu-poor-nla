@@ -29,10 +29,13 @@ Key numbers, each traceable to a JSON in `results/`.
   saw.
 - A blind judge from a different model family preferred the trained model
   in 28 of 36 decided comparisons (p = 6e-4).
-- On 295 never-seen documents across 4 unseen domains, rank-level decoding
-  survives (mean own-doc percentile 0.376 vs 0.5 chance, worst-case
-  p = 0.0003) and keeps its lead over base. Exact top-1 does not transfer
-  out of distribution.
+- On 295 never-seen documents across 4 unseen domains, a topic-level
+  ranking signal survives (mean own-doc percentile 0.376 vs base 0.428 vs
+  0.5 chance, paired dense-vs-base p = 0.008). This lead lives in the
+  semantic-embedding metric; the lexical metric is flat out of distribution,
+  and exact top-1 is at chance for both models. So topic-level ranking
+  generalizes to unseen domains; word-for-word document identification does
+  not.
 - Causal patching places the improvement early, at the injection site,
   with late-layer processing becoming more distributed. Direction
   replicated across seeds.
