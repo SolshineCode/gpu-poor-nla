@@ -52,6 +52,21 @@ Key numbers, each traceable to a JSON in `results/`.
   held-out set, `*_n295_*` the never-seen fresh set, `judge2afc_*` the
   blind-judge verdict, `t2_summary_*` the causal-patching contrasts.
 
+## Verify the numbers yourself (no GPU)
+
+Every headline number above traces to a JSON in `results/`. To confirm that,
+with nothing but a Python install and no model download, run
+
+```
+python verify_claims.py
+```
+
+It re-derives all 21 headline claims from the committed data and prints a
+pass/fail table. Regenerating the JSONs from scratch needs the HuggingFace
+adapters plus the eval harness, which ships with the methodology paper; this
+script checks that the published data is self-consistent with the published
+claims.
+
 Evaluation conventions worth copying. Every retrieval stat is reported as
 the worst case across 4 negative-sampling seeds (max p-value, min effect).
 Every harness carries a positive control. If your permutation null ever
