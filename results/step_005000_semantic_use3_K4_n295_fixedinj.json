@@ -50,7 +50,7 @@
   "<explanation>\nIndia elects first female president Pratibha Patil amid scandal-marked campaign\n</explanation>"
  ],
  "mode": "semantic",
- "checkpoint": "/home/darkstar/data/nla_adapters/priordev_wd3/step_005000",
+ "checkpoint": "step_005000",
  "n": 295,
  "injection": {
   "inject_mode": "embed",

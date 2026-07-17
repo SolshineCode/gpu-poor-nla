@@ -24,8 +24,9 @@ Key numbers, each traceable to a JSON in `results/`.
 - Round-trip faithfulness (v0, 42 held-out rows) mean cosine 0.438, worst
   row 0.313, every row above the pre-committed 0.30 gate.
 - Exact-document retrieval among 580 held-out candidates went from 3x
-  chance (base) to 9x chance after 500 GRPO steps, replicated in two
-  independent seeds, transferred to a lexical metric the reward never saw.
+  chance (base) to 9x chance after 500 GRPO steps (seed 0; the independent
+  seed 1 reached 7x), and transferred to a lexical metric the reward never
+  saw.
 - A blind judge from a different model family preferred the trained model
   in 28 of 36 decided comparisons (p = 6e-4).
 - On 295 never-seen documents across 4 unseen domains, rank-level decoding

@@ -50,7 +50,7 @@
   "<explanation>\nEastman Kodak patent US2245257 publication header, also-published-as"
  ],
  "mode": "tfidf",
- "checkpoint": "/home/darkstar/data/nla_adapters/priordev_wd3/step_005000",
+ "checkpoint": "step_005000",
  "n": 580,
  "injection": {
   "inject_mode": "embed",

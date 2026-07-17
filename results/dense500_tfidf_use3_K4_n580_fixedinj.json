@@ -50,7 +50,7 @@
   "<explanation>Catholic Archdiocese drops lawsuit over St. Monica Church sale</explanation>"
  ],
  "mode": "tfidf",
- "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/eval_named/dense500",
+ "checkpoint": "dense500",
  "n": 580,
  "injection": {
   "inject_mode": "embed",

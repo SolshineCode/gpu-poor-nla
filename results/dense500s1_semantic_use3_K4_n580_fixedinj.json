@@ -50,7 +50,7 @@
   "<explanation>\nMarried professional couple testimonial: happy life together\n</explanation>"
  ],
  "mode": "semantic",
- "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/eval_named/dense500s1",
+ "checkpoint": "dense500s1",
  "n": 580,
  "injection": {
   "inject_mode": "embed",

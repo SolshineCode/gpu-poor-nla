@@ -1,5 +1,5 @@
 {
- "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/wco_use3/dense500_outs_n295_fixedinj.pkl",
+ "source_pkl": "dense500_outs_n295_fixedinj.pkl",
  "n": 295,
  "injection": {
   "inject_mode": "embed",
