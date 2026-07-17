@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.0,
+ "n_docs": 295,
+ "chance": 0.003389830508474576,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0033807909604519773,
+   "null_std": 0.0033005059789666994,
+   "p_value": 1.0,
+   "z": -1.0243250522715575
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0034225988700564967,
+   "null_std": 0.003393624806806925,
+   "p_value": 1.0,
+   "z": -1.0085377918569305
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0034158192090395475,
+   "null_std": 0.0034015749469563715,
+   "p_value": 1.0,
+   "z": -1.004187548797575
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0034045197740112994,
+   "null_std": 0.0033711028821477636,
+   "p_value": 1.0,
+   "z": -1.0099127472586458
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": -1.0243250522715575,
+  "mean_null_mean": 0.00340593220338983,
+  "se_null_mean": 9.172457466535281e-06
+ },
+ "effect_LCB_95": -0.003435123056764582,
+ "sample_outputs": [
+  "<explanation>\nMatt Brown removed as Missouri-Kansas City basketball head coach\n</explanation>",
+  "<explanation>\nPew 5-option distribution India, Indonesia, Kenya shares\n</explanation>",
+  "<explanation>\nUNHCR Asylum Levels and Trends report, industrialized countries 2011\n</explanation>",
+  "<explanation>\nSt. Andrews wind suspends Women's British Open third round\n</explanation>",
+  "<explanation>\nConditional admission: Harvard, Stanford, MIT waitlist outcomes\n</explanation>",
+  "<explanation>\nIndia elects first female president Pratibha Patil amid scandal-marked campaign\n</explanation>"
+ ],
+ "mode": "semantic",
+ "checkpoint": "/home/darkstar/data/nla_adapters/priordev_wd3/step_005000",
+ "n": 295,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 191
+}

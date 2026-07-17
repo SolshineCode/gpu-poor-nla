@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.01206896551724138,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.001764367816091954,
+   "null_std": 0.0017362695792388337,
+   "p_value": 0.0003332222592469177,
+   "z": 5.934906548170918
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017304597701149425,
+   "null_std": 0.0017082485260698818,
+   "p_value": 0.0006664445184938354,
+   "z": 6.052108685180505
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016632183908045976,
+   "null_std": 0.001675833293668414,
+   "p_value": 0.0006664445184938354,
+   "z": 6.20929728484461
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.001743103448275862,
+   "null_std": 0.0017306305912473286,
+   "p_value": 0.0003332222592469177,
+   "z": 5.966531572492753
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0006664445184938354,
+  "min_z": 5.934906548170918,
+  "mean_null_mean": 0.001725287356321839,
+  "se_null_mean": 2.1840340758150125e-05
+ },
+ "effect_LCB_95": 0.010274172449167616,
+ "sample_outputs": [
+  "<explanation>\nAquarium fish food: pellet, flake, frozen options\n</explanation>",
+  "<explanation>\nFederal $12,000 overstatement of Idaho taxable income\n</explanation>",
+  "<explanation>\nSpaceShipOne and private spaceflight rocketeer privateer era\n</explanation>",
+  "<explanation>\nInternational organ trade: kidneys and livers sold by poor donors\n</explanation>",
+  "<explanation>\nInternational organ trade: kidneys and livers sold by poor donors\n</explanation>",
+  "<explanation>\nMarried professional couple testimonial: happy life together\n</explanation>"
+ ],
+ "mode": "semantic",
+ "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/eval_named/dense500s1",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 336
+}

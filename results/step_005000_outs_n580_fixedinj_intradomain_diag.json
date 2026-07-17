@@ -1,0 +1,105 @@
+{
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/wco_use3/step_005000_outs_n580_fixedinj.pkl",
+ "parquet": "data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.45,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.36659137931034486,
+   "within_domain_mean_percentile": 0.49536722310630454,
+   "wd_chance": 0.5,
+   "wd_p": 0.21078921078921078,
+   "wd_null_mean": 0.5001561925908283,
+   "wd_null_std": 0.006011754826587961,
+   "gen_pairwise_sim_same_domain": 0.019380388708058863,
+   "gen_pairwise_sim_cross_domain": 0.009604232288127464
+  },
+  "semantic": {
+   "domain_routing_top1": 0.5241379310344828,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.36079310344827586,
+   "within_domain_mean_percentile": 0.4480113048700221,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.49999712485785197,
+   "wd_null_std": 0.011595160205448818,
+   "gen_pairwise_sim_same_domain": 0.13319049534238436,
+   "gen_pairwise_sim_cross_domain": 0.10669256709804119
+  }
+ },
+ "duplication": {
+  "n_unique": 335,
+  "n_rows_in_dup_groups": 332,
+  "per_domain_unique": {
+   "medicine": 72,
+   "reviews": 136,
+   "science": 172
+  },
+  "dup_pair_same_domain_frac": 0.6468200270635994,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nInternational organ trade: kidneys and livers sold by poor donors\n",
+    "count": 14,
+    "domains": {
+     "science": 3,
+     "medicine": 11
+    }
+   },
+   {
+    "text": "<explanation>\nCFO admits internal controls failed, fix process already started\n<",
+    "count": 13,
+    "domains": {
+     "science": 4,
+     "medicine": 9
+    }
+   },
+   {
+    "text": "<explanation>\nDylan Minnette bio truncated at Evansville birthplace line\n</expla",
+    "count": 11,
+    "domains": {
+     "science": 1,
+     "reviews": 10
+    }
+   },
+   {
+    "text": "<explanation>\nDesigner revisits Futurefarmers output after meeting Amy Francesch",
+    "count": 9,
+    "domains": {
+     "science": 1,
+     "reviews": 7,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nUSF SGEF proposal call for energy-efficiency campus projects\n</exp",
+    "count": 8,
+    "domains": {
+     "science": 3,
+     "reviews": 1,
+     "medicine": 4
+    }
+   }
+  ]
+ }
+}

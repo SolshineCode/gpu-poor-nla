@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.006779661016949152,
+ "n_docs": 295,
+ "chance": 0.003389830508474576,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0033096045197740114,
+   "null_std": 0.0033416460553666615,
+   "p_value": 0.26124625124958345,
+   "z": 1.0384273015880379
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.003294915254237288,
+   "null_std": 0.0032723413552126477,
+   "p_value": 0.2522492502499167,
+   "z": 1.0649090004305204
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0034259887005649715,
+   "null_std": 0.0033246033339384604,
+   "p_value": 0.2689103632122626,
+   "z": 1.008743593901935
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0033525423728813556,
+   "null_std": 0.0033766052746920586,
+   "p_value": 0.2582472509163612,
+   "z": 1.0149598085211144
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.2689103632122626,
+  "min_z": 1.008743593901935,
+  "mean_null_mean": 0.003345762711864407,
+  "se_null_mean": 2.940387144135308e-05
+ },
+ "effect_LCB_95": 0.003340322063055158,
+ "sample_outputs": [
+  "<explanation>Rosebank plantation mystery: lawyer found dead on grounds</explanation>",
+  "<explanation>\nRam Gopal Varma's 'Company' sequel set in 1980s Mumbai",
+  "<explanation>USF SGEF proposal call</explanation>",
+  "<explanation>Question: How many people attended the screening? Answer: 200 people attended the screening</explanation",
+  "<explanation>Case 1: healthy donor, SCID-compatible bone marrow source</explanation>",
+  "<explanation>Binary distribution cut after Britain first value 0</explanation>"
+ ],
+ "mode": "tfidf",
+ "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/eval_named/dense500",
+ "n": 295,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 239
+}

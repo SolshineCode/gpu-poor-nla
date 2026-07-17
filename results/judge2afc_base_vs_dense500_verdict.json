@@ -1,0 +1,22 @@
+{
+ "model": "qwen3.5:27b",
+ "n_tasks": 100,
+ "dense_wins": 28,
+ "base_wins": 8,
+ "ties": 64,
+ "unparsed": 0,
+ "dense_win_rate": 0.7777777777777778,
+ "binomial_p_one_sided": 0.0005966214812360704,
+ "position_check": {
+  "A": {
+   "dense_wins": 13,
+   "decided": 18,
+   "rate": 0.7222222222222222
+  },
+  "B": {
+   "dense_wins": 15,
+   "decided": 18,
+   "rate": 0.8333333333333334
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.015517241379310345,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017183908045977012,
+   "null_std": 0.0016751567347196507,
+   "p_value": 0.0003332222592469177,
+   "z": 8.237348947998367
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0016551724137931034,
+   "null_std": 0.0016707836586723026,
+   "p_value": 0.0003332222592469177,
+   "z": 8.296746790207454
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017172413793103448,
+   "null_std": 0.001709116169734764,
+   "p_value": 0.0003332222592469177,
+   "z": 8.0743487401838
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0016942528735632185,
+   "null_std": 0.0016808056627840811,
+   "p_value": 0.0003332222592469177,
+   "z": 8.224025420420555
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 8.0743487401838,
+  "mean_null_mean": 0.001696264367816092,
+  "se_null_mean": 1.4782334644312542e-05
+ },
+ "effect_LCB_95": 0.013773933025221985,
+ "sample_outputs": [
+  "<explanation>Fish Smoked with Birch and Spruce for Sustainable Seafood</explanation>",
+  "<explanation>Federal unemployment benefits reduced by $100 billion in 2011</explanation>",
+  "<explanation>Projectile initial velocity v0 directed at target</explanation>",
+  "<explanation>Parathyroid hormone, vitamin D, phosphate control</explanation>",
+  "<explanation>Example: Bar-model prior shape parameter, second paper reference</explanation>",
+  "<explanation>Catholic Archdiocese drops lawsuit over St. Monica Church sale</explanation>"
+ ],
+ "mode": "semantic",
+ "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/eval_named/dense500",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 378
+}

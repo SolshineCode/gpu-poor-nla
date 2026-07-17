@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.006779661016949152,
+ "n_docs": 295,
+ "chance": 0.003389830508474576,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.003421468926553672,
+   "null_std": 0.0033258013150681267,
+   "p_value": 0.2689103632122626,
+   "z": 1.009739239133397
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0033977401129943498,
+   "null_std": 0.0033448906222179834,
+   "p_value": 0.2635788070643119,
+   "z": 1.0110707000341894
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0033559322033898304,
+   "null_std": 0.0034222741217943995,
+   "p_value": 0.26257914028657114,
+   "z": 1.0004250655303248
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0033762711864406777,
+   "null_std": 0.0034112049286729555,
+   "p_value": 0.26457847384205263,
+   "z": 0.9977089915951692
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.2689103632122626,
+  "min_z": 0.9977089915951692,
+  "mean_null_mean": 0.0033878531073446324,
+  "se_null_mean": 1.4085634475502358e-05
+ },
+ "effect_LCB_95": 0.0033469811342103726,
+ "sample_outputs": [
+  "<explanation>\nMatt Brown removed as Missouri-Kansas City basketball head coach\n</explanation>",
+  "<explanation>\nPew 5-option distribution India, Indonesia, Kenya shares\n</explanation>",
+  "<explanation>\nUNHCR Asylum Levels and Trends report, industrialized countries 2011\n</explanation>",
+  "<explanation>\nSt. Andrews wind suspends Women's British Open third round\n</explanation>",
+  "<explanation>\nConditional admission: Harvard, Stanford, MIT waitlist outcomes\n</explanation>",
+  "<explanation>\nIndia elects first female president Pratibha Patil amid scandal-marked campaign\n</explanation>"
+ ],
+ "mode": "tfidf",
+ "checkpoint": "/home/darkstar/data/nla_adapters/priordev_wd3/step_005000",
+ "n": 295,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 191
+}

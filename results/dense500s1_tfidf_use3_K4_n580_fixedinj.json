@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.006896551724137931,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017316091954022988,
+   "null_std": 0.0017174997689860597,
+   "p_value": 0.019993335554815063,
+   "z": 3.007244960957144
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017195402298850573,
+   "null_std": 0.0017120202521882623,
+   "p_value": 0.01866044651782739,
+   "z": 3.02391953869227
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016965517241379307,
+   "null_std": 0.001666636543524846,
+   "p_value": 0.01299566811062979,
+   "z": 3.1200563896686346
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.001713793103448276,
+   "null_std": 0.001713730658683358,
+   "p_value": 0.019993335554815063,
+   "z": 3.0242550609716354
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.019993335554815063,
+  "min_z": 3.007244960957144,
+  "mean_null_mean": 0.0017153735632183908,
+  "se_null_mean": 7.289926514135466e-06
+ },
+ "effect_LCB_95": 0.005157978361218836,
+ "sample_outputs": [
+  "<explanation>\nAquarium fish food: pellet, flake, frozen options\n</explanation>",
+  "<explanation>\nFederal $12,000 overstatement of Idaho taxable income\n</explanation>",
+  "<explanation>\nSpaceShipOne and private spaceflight rocketeer privateer era\n</explanation>",
+  "<explanation>\nInternational organ trade: kidneys and livers sold by poor donors\n</explanation>",
+  "<explanation>\nInternational organ trade: kidneys and livers sold by poor donors\n</explanation>",
+  "<explanation>\nMarried professional couple testimonial: happy life together\n</explanation>"
+ ],
+ "mode": "tfidf",
+ "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/eval_named/dense500s1",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 336
+}

@@ -1,0 +1,67 @@
+{
+ "obs_doc_top1": 0.0017241379310344827,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017172413793103448,
+   "null_std": 0.001687528570243018,
+   "p_value": 0.6331222925691437,
+   "z": 0.0040867762725095395
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001689655172413793,
+   "null_std": 0.0016988956801129553,
+   "p_value": 0.6291236254581806,
+   "z": 0.020297160681519794
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016919540229885055,
+   "null_std": 0.001658209219239471,
+   "p_value": 0.6361212929023659,
+   "z": 0.01940883433354049
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017086206896551725,
+   "null_std": 0.0017052868875955015,
+   "p_value": 0.6284571809396867,
+   "z": 0.009099490228351237
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6361212929023659,
+  "min_z": 0.0040867762725095395,
+  "mean_null_mean": 0.0017018678160919541,
+  "se_null_mean": 6.6419105352450006e-06
+ },
+ "effect_LCB_95": 1.132591299609579e-06,
+ "sample_outputs": [
+  "<explanation>\nSustainable seafood consumption: wild vs farmed, MSC label\n</explanation> <explanation>\nSustainable seafood",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <explanation>",
+  "<explanation>\nSpaceShipOne carried 14km by White Knight launcher\n</explanation> <spacer>",
+  "<explanation>\nInternational adoption history: China, Ethiopia, Guatemala, Honduras, India\n</explanation>",
+  "<explanation>\nAn American in Paris: jazz, cabaret, and the city's enduring romance\n</explanation>",
+  "<explanation>\nEastman Kodak patent US2245257 publication header, also-published-as"
+ ],
+ "mode": "tfidf",
+ "checkpoint": "/home/darkstar/data/nla_adapters/priordev_wd3/step_005000",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy"
+ },
+ "n_unique_outputs": 335
+}
