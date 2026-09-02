@@ -1,0 +1,91 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step014000_shuffle_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/f194_ablation_eval_subset120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.38333333333333336,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.44255744255744256,
+   "routing_null_mean": 0.3730666666666666,
+   "within_domain_mean_percentile": 0.5020074696545285,
+   "wd_chance": 0.5,
+   "wd_p": 0.5274725274725275,
+   "wd_null_mean": 0.5004278682306256,
+   "wd_null_std": 0.01292405247248882,
+   "gen_pairwise_sim_same_domain": 0.01609764937244407,
+   "gen_pairwise_sim_cross_domain": 0.019458996123565178
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 99,
+  "n_rows_in_dup_groups": 34,
+  "per_domain_unique": {
+   "medicine": 23,
+   "reviews": 41,
+   "science": 47
+  },
+  "dup_pair_same_domain_frac": 0.25,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nHuman germline editing prevents millions of babies' genetic-disord",
+    "count": 7,
+    "domains": {
+     "science": 2,
+     "reviews": 2,
+     "medicine": 3
+    }
+   },
+   {
+    "text": "<explanation>\nNeuroscientist creativity and Crick's single-neuron stimulation ch",
+    "count": 4,
+    "domains": {
+     "science": 1,
+     "reviews": 2,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nAtheist Hitchens in Beirut sponsored by NOW Lebanon owners\n</expla",
+    "count": 3,
+    "domains": {
+     "science": 2,
+     "reviews": 1
+    }
+   },
+   {
+    "text": "<explanation>\nRegularized kernel additive models versus Gaussian-RBF nonparametr",
+    "count": 2,
+    "domains": {
+     "science": 2
+    }
+   },
+   {
+    "text": "<explanation>\nContent monetization options ending at 'Amazon Affiliates'\n</expla",
+    "count": 2,
+    "domains": {
+     "science": 1,
+     "medicine": 1
+    }
+   }
+  ]
+ }
+}

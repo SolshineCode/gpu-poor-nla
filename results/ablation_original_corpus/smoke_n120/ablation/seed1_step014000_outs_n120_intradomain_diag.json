@@ -1,0 +1,89 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step014000_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/f194_ablation_eval_subset120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.49166666666666664,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.003996003996003996,
+   "routing_null_mean": 0.3725333333333333,
+   "within_domain_mean_percentile": 0.4919905462184874,
+   "wd_chance": 0.5,
+   "wd_p": 0.27472527472527475,
+   "wd_null_mean": 0.5002990779645191,
+   "wd_null_std": 0.013833095456096263,
+   "gen_pairwise_sim_same_domain": 0.02204426688769607,
+   "gen_pairwise_sim_cross_domain": 0.01619744858592208
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 99,
+  "n_rows_in_dup_groups": 34,
+  "per_domain_unique": {
+   "medicine": 19,
+   "reviews": 39,
+   "science": 47
+  },
+  "dup_pair_same_domain_frac": 0.475,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nHuman germline editing prevents millions of babies' genetic-disord",
+    "count": 7,
+    "domains": {
+     "science": 3,
+     "medicine": 4
+    }
+   },
+   {
+    "text": "<explanation>\nNeuroscientist creativity and Crick's single-neuron stimulation ch",
+    "count": 4,
+    "domains": {
+     "science": 2,
+     "medicine": 2
+    }
+   },
+   {
+    "text": "<explanation>\nAtheist Hitchens in Beirut sponsored by NOW Lebanon owners\n</expla",
+    "count": 3,
+    "domains": {
+     "science": 1,
+     "reviews": 2
+    }
+   },
+   {
+    "text": "<explanation>\nInternet essential but not a right, argument\n</explanation> <expla",
+    "count": 2,
+    "domains": {
+     "science": 1,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nCloud platform failure inevitability, service resilience, SLA sect",
+    "count": 2,
+    "domains": {
+     "science": 2
+    }
+   }
+  ]
+ }
+}

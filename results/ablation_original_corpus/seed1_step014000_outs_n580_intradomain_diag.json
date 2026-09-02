@@ -1,0 +1,89 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step014000_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.45689655172413796,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.35517931034482764,
+   "within_domain_mean_percentile": 0.5030313741300364,
+   "wd_chance": 0.5,
+   "wd_p": 0.6543456543456544,
+   "wd_null_mean": 0.5003836603380861,
+   "wd_null_std": 0.006070371754114093,
+   "gen_pairwise_sim_same_domain": 0.019560823173149368,
+   "gen_pairwise_sim_cross_domain": 0.011775320262176973
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 419,
+  "n_rows_in_dup_groups": 219,
+  "per_domain_unique": {
+   "medicine": 85,
+   "reviews": 166,
+   "science": 194
+  },
+  "dup_pair_same_domain_frac": 0.6245110821382008,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nNeuroscientist creativity and Crick's single-neuron stimulation ch",
+    "count": 25,
+    "domains": {
+     "science": 16,
+     "medicine": 9
+    }
+   },
+   {
+    "text": "<explanation>\nHuman germline editing prevents millions of babies' genetic-disord",
+    "count": 20,
+    "domains": {
+     "science": 5,
+     "medicine": 15
+    }
+   },
+   {
+    "text": "<explanation>\nCriterion and EA reluctant to show Most Wanted Vita\n</explanation>",
+    "count": 10,
+    "domains": {
+     "reviews": 10
+    }
+   },
+   {
+    "text": "<explanation>\nNeed to Know game delays September 26 alpha release after medical ",
+    "count": 9,
+    "domains": {
+     "reviews": 9
+    }
+   },
+   {
+    "text": "<explanation>\nChina-India-Japan-Russia four-option survey shares, truncated at R",
+    "count": 8,
+    "domains": {
+     "science": 6,
+     "reviews": 1,
+     "medicine": 1
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step014000_noinj_outs_n24.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/powered_eval_heldout_docid_smoke120_seed42.parquet",
+ "n": 24,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "noinj",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 146.4,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_014000"
+ },
+ "domains": {
+  "science": 24
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 1.0,
+   "routing_chance": 1.0,
+   "routing_p": 1.0,
+   "routing_null_mean": 1.0,
+   "within_domain_mean_percentile": 0.5,
+   "wd_chance": 0.5,
+   "wd_p": 1.0,
+   "wd_null_mean": 0.5,
+   "wd_null_std": 0.0,
+   "gen_pairwise_sim_same_domain": 1.0,
+   "gen_pairwise_sim_cross_domain": NaN
+  },
+  "semantic": {
+   "domain_routing_top1": 1.0,
+   "routing_chance": 1.0,
+   "routing_p": 1.0,
+   "routing_null_mean": 1.0,
+   "within_domain_mean_percentile": 0.5,
+   "wd_chance": 0.5,
+   "wd_p": 1.0,
+   "wd_null_mean": 0.5,
+   "wd_null_std": 0.0,
+   "gen_pairwise_sim_same_domain": 1.0000001192092896,
+   "gen_pairwise_sim_cross_domain": NaN
+  }
+ },
+ "duplication": {
+  "n_unique": 1,
+  "n_rows_in_dup_groups": 24,
+  "per_domain_unique": {
+   "science": 1
+  },
+  "dup_pair_same_domain_frac": 1.0,
+  "dup_pair_same_domain_chance": 1.0,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>China's non-national sample is fixed as a two-category split (80.7%",
+    "count": 24,
+    "domains": {
+     "science": 24
+    }
+   }
+  ]
+ }
+}

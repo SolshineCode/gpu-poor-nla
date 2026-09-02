@@ -1,0 +1,93 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step005000_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_005000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.5,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.3593172413793103,
+   "within_domain_mean_percentile": 0.5053587674059251,
+   "wd_chance": 0.5,
+   "wd_p": 0.8111888111888111,
+   "wd_null_mean": 0.5000533421394141,
+   "wd_null_std": 0.006050865040874789,
+   "gen_pairwise_sim_same_domain": 0.041275685509313556,
+   "gen_pairwise_sim_cross_domain": 0.023837333134022524
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 242,
+  "n_rows_in_dup_groups": 416,
+  "per_domain_unique": {
+   "medicine": 63,
+   "reviews": 113,
+   "science": 119
+  },
+  "dup_pair_same_domain_frac": 0.57238059977786,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Flo",
+    "count": 56,
+    "domains": {
+     "science": 42,
+     "reviews": 3,
+     "medicine": 11
+    }
+   },
+   {
+    "text": "<explanation>\nAnti-body-camera argument: footage storage strains police budgets\n",
+    "count": 19,
+    "domains": {
+     "science": 11,
+     "reviews": 5,
+     "medicine": 3
+    }
+   },
+   {
+    "text": "<explanation>\nAchilles: greatest Greek warrior of Trojan War in Homer's Iliad\n</",
+    "count": 14,
+    "domains": {
+     "science": 9,
+     "reviews": 1,
+     "medicine": 4
+    }
+   },
+   {
+    "text": "<explanation>\nHome Energy Magazine editorial: getting energy price right\n</expla",
+    "count": 14,
+    "domains": {
+     "science": 6,
+     "reviews": 5,
+     "medicine": 3
+    }
+   },
+   {
+    "text": "<explanation>\nReviewer Deanne criticizes Edge link-import workaround as misleadi",
+    "count": 14,
+    "domains": {
+     "reviews": 14
+    }
+   }
+  ]
+ }
+}

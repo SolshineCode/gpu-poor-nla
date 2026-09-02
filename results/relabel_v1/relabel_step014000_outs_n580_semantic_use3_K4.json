@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.4706896551724138,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017143678160919538,
+   "null_std": 0.001706491205401548,
+   "p_value": 0.0003332222592469177,
+   "z": 274.8184611775661
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017097701149425284,
+   "null_std": 0.0017052969593727434,
+   "p_value": 0.0003332222592469177,
+   "z": 275.0136169567567
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017,
+   "null_std": 0.0016996572362010963,
+   "p_value": 0.0003332222592469177,
+   "z": 275.93190256684966
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017109195402298851,
+   "null_std": 0.0017082090816448142,
+   "p_value": 0.0003332222592469177,
+   "z": 274.54410610325624
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 274.54410610325624,
+  "mean_null_mean": 0.0017087643678160918,
+  "se_null_mean": 3.0804365384838963e-06
+ },
+ "effect_LCB_95": 0.46897108748071714,
+ "sample_outputs": [
+  "<explanation>Model is midlist of specific mesophile-fermented foods (cheese, yogurt named) and must supply",
+  "<explanation>Model must complete 'heat added or removed', introducing the heating/cooling curve graph, after fixing the specific",
+  "<explanation>Text has set up Kilauea's rock ejection as the projectile-motion worked example; model",
+  "<explanation>Model holds the three-stage naming chain fixed: meteoroid in space, meteor as the vaporizing atmospheric",
+  "<explanation>Model has fixed overpotential's precise definition \u2014 actual minus theoretical reduction-potential voltage \u2014 as the specific",
+  "<explanation>Text has established that gametes (sperm, egg) as the dominant life stage; model must complete"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step014000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 497
+}

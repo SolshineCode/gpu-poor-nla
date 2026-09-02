@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.03333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.00841388888888889,
+   "null_std": 0.00842823691344375,
+   "p_value": 0.019993335554815063,
+   "z": 2.956661600451592
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008366666666666666,
+   "null_std": 0.008227033127080141,
+   "p_value": 0.01732755748083972,
+   "z": 3.034710846301512
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008244444444444445,
+   "null_std": 0.008206900138087657,
+   "p_value": 0.015328223925358214,
+   "z": 3.057048150177439
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008305555555555556,
+   "null_std": 0.008207334494595236,
+   "p_value": 0.017994001999333556,
+   "z": 3.0494404475910954
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.019993335554815063,
+  "min_z": 2.956661600451592,
+  "mean_null_mean": 0.00833263888888889,
+  "se_null_mean": 3.682302171174352e-05
+ },
+ "effect_LCB_95": 0.024883507155048522,
+ "sample_outputs": [
+  "<explanation>\nMid-infrared second harmonic generation enhancement from SiC nanopillar SHG\n</explanation> <explanation",
+  "<explanation>\nNon-vegan Champagne fining process explained by Bon Appetit\n</explanation> <explanation>",
+  "<explanation>\nHuman lifespan: variability within and across populations, no universal age limit\n</explanation> <explanation>",
+  "<explanation>\nKelly's affirmative-action-slavery remark amid Walker court appointment\n</explanation>\n</",
+  "<explanation>\nHong Kong electoral reform vote defeated after supporter walkout\n</explanation>\n</concept> <explanation",
+  "<explanation>\nMoral-judgment task: home health aide vs typing his paper\n</explanation> <explanation>"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step010000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_010000"
+ },
+ "n": 120,
+ "n_unique_outputs": 104
+}

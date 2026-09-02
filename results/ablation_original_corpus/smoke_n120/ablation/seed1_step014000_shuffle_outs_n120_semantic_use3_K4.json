@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.0,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008275,
+   "null_std": 0.00819729658462449,
+   "p_value": 1.0,
+   "z": -1.0094791512743089
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008380555555555556,
+   "null_std": 0.008075029621930914,
+   "p_value": 1.0,
+   "z": -1.0378358900080107
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008469444444444444,
+   "null_std": 0.00831692783305512,
+   "p_value": 1.0,
+   "z": -1.0183380947186795
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008272222222222222,
+   "null_std": 0.008226873684291255,
+   "p_value": 1.0,
+   "z": -1.0055122442212825
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": -1.0378358900080107,
+  "mean_null_mean": 0.008349305555555556,
+  "se_null_mean": 4.732253778385656e-05
+ },
+ "effect_LCB_95": -0.008499906991082438,
+ "sample_outputs": [
+  "<explanation>\nBonding electroforming anode target, immersion plating process, literature cell\n</explanation> <explanation>",
+  "<explanation>\nMalpaso Productions 'Trouble with the Curve' Blu-ray bitrate details\n</explanation>",
+  "<explanation>\nPhase diffuser scintillation index dependence on finite-time phase fluctuations\n</explanation>\n</diffuser phase",
+  "<explanation>\nWriting first essay draft in lab vs going to fridge for snack\n</explanation> <explanation>",
+  "<explanation>\nMeta-analytic review of short-term plasticity in neuromorphic synapses\n</explanation> <explanation>",
+  "<explanation>\nLetter A lowercase double-storey form; English name pronounced 'a'\n</explanation>\n<"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step014000_shuffle_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 99
+}

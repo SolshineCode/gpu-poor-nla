@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.008333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0083,
+   "null_std": 0.008263529870819486,
+   "p_value": 0.6327890703098967,
+   "z": 0.004033788689626133
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.007961111111111112,
+   "null_std": 0.008179149567914809,
+   "p_value": 0.6094635121626124,
+   "z": 0.04550867044134605
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008433333333333333,
+   "null_std": 0.008321613981629962,
+   "p_value": 0.6361212929023659,
+   "z": -0.012016899631337551
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008286111111111112,
+   "null_std": 0.008219927889353582,
+   "p_value": 0.6341219593468844,
+   "z": 0.005744846287233037
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6361212929023659,
+  "min_z": -0.012016899631337551,
+  "mean_null_mean": 0.008245138888888889,
+  "se_null_mean": 0.00010032339041623852
+ },
+ "effect_LCB_95": -0.00023107935871930461,
+ "sample_outputs": [
+  "<explanation>\nHuman germline editing prevents millions of babies' genetic-disorder suffering\n</explanation> <explanation",
+  "<explanation>\nStylus pens and covers protecting against scratches and dust\n</explanation>\n</div",
+  "<explanation>\nPettit 120 thinner evaporation rate and 10% usage limit\n</explanation",
+  "<explanation>\nFinger Shepherd joins Agent Sheep among new sheep games\n</explanation>\n</concept> <explanation>",
+  "<explanation>\nContent monetization listing with Amazon Affiliates or eBay Promotional Services\n</explanation>\n</content monetization",
+  "<explanation>\nHumans and animals share 98% of genetic material, Neanderthal ancestor\n</explanation>"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step014000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 99
+}

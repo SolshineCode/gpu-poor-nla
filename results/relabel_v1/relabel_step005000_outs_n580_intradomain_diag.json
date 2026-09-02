@@ -1,0 +1,86 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step005000_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_005000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.8448275862068966,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.35735689655172415,
+   "within_domain_mean_percentile": 0.33364543582892925,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.49968717666537155,
+   "wd_null_std": 0.008454649980532313,
+   "gen_pairwise_sim_same_domain": 0.04535524191608257,
+   "gen_pairwise_sim_cross_domain": 0.007959830779059759
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 395,
+  "n_rows_in_dup_groups": 247,
+  "per_domain_unique": {
+   "medicine": 90,
+   "reviews": 113,
+   "science": 205
+  },
+  "dup_pair_same_domain_frac": 0.9474775397373877,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>Reviewer has established the film as a continuity-confused, badly a",
+    "count": 48,
+    "domains": {
+     "science": 1,
+     "reviews": 47
+    }
+   },
+   {
+    "text": "<explanation>Reviewer has established the protagonist as a German-American in am",
+    "count": 10,
+    "domains": {
+     "reviews": 10
+    }
+   },
+   {
+    "text": "<explanation>Reviewer has established a family tradition of working through a fa",
+    "count": 8,
+    "domains": {
+     "reviews": 8
+    }
+   },
+   {
+    "text": "<explanation>Model has traced the plot (children inked by a UFO, Schiavelli's pr",
+    "count": 7,
+    "domains": {
+     "reviews": 7
+    }
+   },
+   {
+    "text": "<explanation>Model has cited two specific bad scenes (a crowd clapping for Jed, ",
+    "count": 7,
+    "domains": {
+     "reviews": 7
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "created": "2026-08-29",
+ "purpose": "Full n=580 scale-up of \u00a7F195's n=120 smoke-scale ablation confirmation (does \u00a7F193's massive relabel-corpus content jump replicate on the original corpus through the identical pipeline, at full statistical power).",
+ "runs": {
+  "baseline_step005000_n580": {
+   "n": 580,
+   "n_unique_outputs": 335,
+   "tfidf": {
+    "obs_doc_top1": 0.0017241379310344827,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.6361212929023659
+   },
+   "semantic": {
+    "obs_doc_top1": 0.005172413793103448,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.07964011996001333
+   }
+  },
+  "seed0_ablation_step005000": {
+   "n": 580,
+   "n_unique_outputs": 351,
+   "tfidf": {
+    "obs_doc_top1": 0.0017241379310344827,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.6377874041986005
+   },
+   "semantic": {
+    "obs_doc_top1": 0.006896551724137931,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.019993335554815063
+   }
+  },
+  "seed0_ablation_step010000": {
+   "n": 580,
+   "n_unique_outputs": 424,
+   "tfidf": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.26991002999000335
+   },
+   "semantic": {
+    "obs_doc_top1": 0.006896551724137931,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.019660113295568143
+   }
+  },
+  "seed0_ablation_step014000": {
+   "n": 580,
+   "n_unique_outputs": 477,
+   "tfidf": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.27957347550816397
+   },
+   "semantic": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.2659113628790403
+   }
+  },
+  "seed0_ablation_step014000_shuffle": {
+   "n": 580,
+   "n_unique_outputs": 477,
+   "tfidf": {
+    "obs_doc_top1": 0.0017241379310344827,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.6381206264578474
+   },
+   "semantic": {
+    "obs_doc_top1": 0.0017241379310344827,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.6457847384205265
+   }
+  },
+  "seed0_ablation_step014000_noinj": {
+   "n": 24,
+   "n_unique_outputs": 1,
+   "tfidf": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   }
+  },
+  "seed1_ablation_step005000": {
+   "n": 580,
+   "n_unique_outputs": 242,
+   "tfidf": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.2675774741752749
+   },
+   "semantic": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.28157280906364546
+   }
+  },
+  "seed1_ablation_step010000": {
+   "n": 580,
+   "n_unique_outputs": 435,
+   "tfidf": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.2715761412862379
+   },
+   "semantic": {
+    "obs_doc_top1": 0.01206896551724138,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   }
+  },
+  "seed1_ablation_step014000": {
+   "n": 580,
+   "n_unique_outputs": 419,
+   "tfidf": {
+    "obs_doc_top1": 0.0034482758620689655,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.27757414195268243
+   },
+   "semantic": {
+    "obs_doc_top1": 0.01206896551724138,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.000999666777740753
+   }
+  },
+  "seed1_ablation_step014000_shuffle": {
+   "n": 580,
+   "n_unique_outputs": 419,
+   "tfidf": {
+    "obs_doc_top1": 0.0,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.0017241379310344827,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.6391202932355882
+   }
+  },
+  "seed1_ablation_step014000_noinj": {
+   "n": 24,
+   "n_unique_outputs": 1,
+   "tfidf": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   }
+  }
+ },
+ "reading": "tf-idf channel entirely null throughout (baseline and both ablation seeds, all steps, 0-2x chance, all p>0.26). Semantic channel: seed0 shows a modest, non-growing signal (4x chance at steps 5000/10000, receding to 2x by step14000, near its own shuffle control); seed1 shows a real, growing signal (2x -> 7x -> 7x chance, p=0.28 -> 0.0003 -> 0.0010), clearing significance and exceeding baseline's own 3x/p=0.08. Neither seed at any step approaches \u00a7F193's relabeled-run smoke-scale numbers (41x/67-69x/68-75x). The relabel effect remains roughly an order of magnitude larger than the largest signal found anywhere in the full-power ablation."
+}

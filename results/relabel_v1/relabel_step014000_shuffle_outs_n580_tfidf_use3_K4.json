@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.0,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017448275862068966,
+   "null_std": 0.0017142151241529614,
+   "p_value": 1.0,
+   "z": -1.0178580042870662
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001691379310344828,
+   "null_std": 0.0017003872749056662,
+   "p_value": 1.0,
+   "z": -0.994702403570951
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017270114942528737,
+   "null_std": 0.0017557424233810254,
+   "p_value": 1.0,
+   "z": -0.9836360221583866
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.001735057471264368,
+   "null_std": 0.0017163270388903008,
+   "p_value": 1.0,
+   "z": -1.0109130899524046
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": -1.0178580042870662,
+  "mean_null_mean": 0.0017245689655172416,
+  "se_null_mean": 1.1647387482975643e-05
+ },
+ "effect_LCB_95": -0.0017616361507786515,
+ "sample_outputs": [
+  "<explanation>Model has established that serum leptin, though decreased in lung cancer, shows no correlation with tumor factors or",
+  "<explanation>Model tracks that localized prostate cancer patients preferred lower radiation dose and weighted GI-toxicity quality-of-life",
+  "<explanation>Model must track that the two-category scale is fixed for Australia and Britain; Netherlands' first value",
+  "<explanation>Model must resolve that 'low-poly' means the game's graphics are blocky rather than realistic",
+  "<explanation>Model has concluded colonoscopy does not change diverticulitis management or outcome, and must now generate a recommendation",
+  "<explanation>Model holds the specific non-fit statistic that justifies concluding African-Americans and Hispanics are underutilized in interpreting"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step014000_shuffle_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 497
+}

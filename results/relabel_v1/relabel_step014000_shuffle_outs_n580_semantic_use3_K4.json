@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.0017241379310344827,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017574712643678163,
+   "null_std": 0.0017324165232914036,
+   "p_value": 0.639786737754082,
+   "z": -0.0192409463116658
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017264367816091954,
+   "null_std": 0.0016992440401056546,
+   "p_value": 0.6427857380873042,
+   "z": -0.0013528666389889627
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017270114942528733,
+   "null_std": 0.0016925238569100106,
+   "p_value": 0.6427857380873042,
+   "z": -0.001697797762176865
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017264367816091954,
+   "null_std": 0.0017384448550179646,
+   "p_value": 0.623125624791736,
+   "z": -0.0013223603652164817
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6427857380873042,
+  "min_z": -0.0192409463116658,
+  "mean_null_mean": 0.00173433908045977,
+  "se_null_mean": 7.71191775880447e-06
+ },
+ "effect_LCB_95": -3.4743913603446424e-05,
+ "sample_outputs": [
+  "<explanation>Model has established that serum leptin, though decreased in lung cancer, shows no correlation with tumor factors or",
+  "<explanation>Model tracks that localized prostate cancer patients preferred lower radiation dose and weighted GI-toxicity quality-of-life",
+  "<explanation>Model must track that the two-category scale is fixed for Australia and Britain; Netherlands' first value",
+  "<explanation>Model must resolve that 'low-poly' means the game's graphics are blocky rather than realistic",
+  "<explanation>Model has concluded colonoscopy does not change diverticulitis management or outcome, and must now generate a recommendation",
+  "<explanation>Model holds the specific non-fit statistic that justifies concluding African-Americans and Hispanics are underutilized in interpreting"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step014000_shuffle_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 497
+}

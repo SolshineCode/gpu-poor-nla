@@ -1,0 +1,53 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step014000_noinj_outs_n24.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 24,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "noinj",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_014000"
+ },
+ "domains": {
+  "science": 24
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 1.0,
+   "routing_chance": 1.0,
+   "routing_p": 1.0,
+   "routing_null_mean": 1.0,
+   "within_domain_mean_percentile": 0.5,
+   "wd_chance": 0.5,
+   "wd_p": 1.0,
+   "wd_null_mean": 0.5,
+   "wd_null_std": 0.0,
+   "gen_pairwise_sim_same_domain": 1.0,
+   "gen_pairwise_sim_cross_domain": NaN
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 1,
+  "n_rows_in_dup_groups": 24,
+  "per_domain_unique": {
+   "science": 1
+  },
+  "dup_pair_same_domain_frac": 1.0,
+  "dup_pair_same_domain_chance": 1.0,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>China's non-national sample is fixed as a two-category split (80.7%",
+    "count": 24,
+    "domains": {
+     "science": 24
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step010000_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/f194_ablation_eval_subset120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_010000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.31666666666666665,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.8451548451548452,
+   "routing_null_mean": 0.35714999999999997,
+   "within_domain_mean_percentile": 0.493843370681606,
+   "wd_chance": 0.5,
+   "wd_p": 0.3006993006993007,
+   "wd_null_mean": 0.5001416374883287,
+   "wd_null_std": 0.01219742419827343,
+   "gen_pairwise_sim_same_domain": 0.022975416798136153,
+   "gen_pairwise_sim_cross_domain": 0.010072400379000934
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 106,
+  "n_rows_in_dup_groups": 25,
+  "per_domain_unique": {
+   "medicine": 23,
+   "reviews": 37,
+   "science": 48
+  },
+  "dup_pair_same_domain_frac": 0.8333333333333334,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nDVDBeaver technical specs for 'Trouble with the Curve' Blu-ray dis",
+    "count": 4,
+    "domains": {
+     "reviews": 4
+    }
+   },
+   {
+    "text": "<explanation>\nObeo Designer 5.0 Viewpoints specify system problem subsets\n</expl",
+    "count": 3,
+    "domains": {
+     "science": 2,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nPettit 120 thinner moderate evaporation from paint film\n</explanat",
+    "count": 2,
+    "domains": {
+     "science": 1,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nNTR3827 glucose-monitoring trial registry, registered 30-jan-2",
+    "count": 2,
+    "domains": {
+     "science": 2
+    }
+   },
+   {
+    "text": "<explanation>\nShred Agent: background secure-erase tool protecting deleted Windo",
+    "count": 2,
+    "domains": {
+     "science": 2
+    }
+   }
+  ]
+ }
+}

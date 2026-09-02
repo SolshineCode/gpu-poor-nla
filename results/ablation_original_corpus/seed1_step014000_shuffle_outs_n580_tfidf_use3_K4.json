@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.0,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0016683908045977012,
+   "null_std": 0.0016506954739225778,
+   "p_value": 1.0,
+   "z": -1.0107199237799773
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001736206896551724,
+   "null_std": 0.0016948234936398944,
+   "p_value": 1.0,
+   "z": -1.024417529048134
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017022988505747125,
+   "null_std": 0.0017095702578063315,
+   "p_value": 1.0,
+   "z": -0.9957466455712115
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017270114942528737,
+   "null_std": 0.0017203958432805396,
+   "p_value": 1.0,
+   "z": -1.0038454231299896
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": -1.024417529048134,
+  "mean_null_mean": 0.001708477011494253,
+  "se_null_mean": 1.515901061011529e-05
+ },
+ "effect_LCB_95": -0.0017567197488021792,
+ "sample_outputs": [
+  "<explanation>\nPediatric Nursing 2nd Edition list price $114 truncated\n</explanation>\n</",
+  "<explanation>\nGlobalization and the Internet's impact on culture and identity\n</explanation>\n</essay>",
+  "<explanation>\nScramble Squares Cats puzzle, nine tiles matching to form a square\n</explanation>\n</concept",
+  "<explanation>\nRomania Drupal site credits page cut mid-'fragments of text'\n</explanation>\n<explanation>",
+  "<explanation>\nFalse-information website editorial legitimizes bots and fake accounts\n</explanation>\n</content> <",
+  "<explanation>\nSubcutaneous CGM critically-ill-patients trial, scientific title truncated\n</explanation>\n<concept"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step014000_shuffle_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 419
+}

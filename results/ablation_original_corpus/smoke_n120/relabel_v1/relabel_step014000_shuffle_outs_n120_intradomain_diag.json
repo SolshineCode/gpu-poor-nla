@@ -1,0 +1,81 @@
+{
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step014000_shuffle_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/powered_eval_heldout_docid_smoke120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "shuffle",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 656.4,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_014000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.35,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.5494505494505495,
+   "routing_null_mean": 0.35105833333333336,
+   "within_domain_mean_percentile": 0.4779353408029879,
+   "wd_chance": 0.5,
+   "wd_p": 0.0979020979020979,
+   "wd_null_mean": 0.5001206874416433,
+   "wd_null_std": 0.017771134137402857,
+   "gen_pairwise_sim_same_domain": 0.01169531683251017,
+   "gen_pairwise_sim_cross_domain": 0.01185165484260141
+  },
+  "semantic": {
+   "domain_routing_top1": 0.3333333333333333,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.6033966033966034,
+   "routing_null_mean": 0.341125,
+   "within_domain_mean_percentile": 0.5091999299719888,
+   "wd_chance": 0.5,
+   "wd_p": 0.6353646353646354,
+   "wd_null_mean": 0.5001059932306255,
+   "wd_null_std": 0.026227958409507177,
+   "gen_pairwise_sim_same_domain": 0.1956569082480788,
+   "gen_pairwise_sim_cross_domain": 0.19947725155445484
+  }
+ },
+ "duplication": {
+  "n_unique": 118,
+  "n_rows_in_dup_groups": 4,
+  "per_domain_unique": {
+   "medicine": 25,
+   "reviews": 43,
+   "science": 52
+  },
+  "dup_pair_same_domain_frac": 0.0,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>Model has established real-time PCR works for pollen mixes and is n",
+    "count": 2,
+    "domains": {
+     "science": 1,
+     "reviews": 1
+    }
+   },
+   {
+    "text": "<explanation>Model has ranked all three anthology segments (predictable-but-enjo",
+    "count": 2,
+    "domains": {
+     "reviews": 1,
+     "medicine": 1
+    }
+   }
+  ]
+ }
+}

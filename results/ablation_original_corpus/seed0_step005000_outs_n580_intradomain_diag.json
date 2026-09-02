@@ -1,0 +1,92 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed0_step005000_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_005000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.4844827586206897,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.3517344827586207,
+   "within_domain_mean_percentile": 0.504970594653283,
+   "wd_chance": 0.5,
+   "wd_p": 0.7942057942057942,
+   "wd_null_mean": 0.4999462994879123,
+   "wd_null_std": 0.006013929382762726,
+   "gen_pairwise_sim_same_domain": 0.017421975025661795,
+   "gen_pairwise_sim_cross_domain": 0.01000547520514527
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 351,
+  "n_rows_in_dup_groups": 318,
+  "per_domain_unique": {
+   "medicine": 83,
+   "reviews": 144,
+   "science": 168
+  },
+  "dup_pair_same_domain_frac": 0.5746987951807229,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nTufts Fletcher commencement, clambake Friday, Ebadi Saturday Class",
+    "count": 24,
+    "domains": {
+     "science": 17,
+     "reviews": 6,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nObeo Designer 5.0 Viewpoints specify system problem subsets\n</expl",
+    "count": 12,
+    "domains": {
+     "science": 2,
+     "reviews": 1,
+     "medicine": 9
+    }
+   },
+   {
+    "text": "<explanation>\nElliott Barkan documents L.A. Chicano mural history at Cal State S",
+    "count": 11,
+    "domains": {
+     "science": 4,
+     "reviews": 4,
+     "medicine": 3
+    }
+   },
+   {
+    "text": "<explanation>\nNeed for Speed Most Wanted Vita: blurry photos, HD gameplay hopes\n",
+    "count": 10,
+    "domains": {
+     "science": 3,
+     "reviews": 7
+    }
+   },
+   {
+    "text": "<explanation>\nFinger Shepherd Android game emerges after Agent Sheep\n</explanati",
+    "count": 9,
+    "domains": {
+     "reviews": 9
+    }
+   }
+  ]
+ }
+}

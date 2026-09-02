@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.016666666666666666,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008388888888888888,
+   "null_std": 0.008110730584681257,
+   "p_value": 0.26957680773075643,
+   "z": 1.0205958255340681
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008372222222222222,
+   "null_std": 0.0081250849948071,
+   "p_value": 0.2689103632122626,
+   "z": 1.0208440217825094
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008519444444444444,
+   "null_std": 0.008251688472932131,
+   "p_value": 0.27924025324891705,
+   "z": 0.9873400150720755
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008311111111111111,
+   "null_std": 0.008108035946737055,
+   "p_value": 0.25791402865711427,
+   "z": 1.0305276899873121
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.27924025324891705,
+  "min_z": 0.9873400150720755,
+  "mean_null_mean": 0.008397916666666666,
+  "se_null_mean": 4.382342457125251e-05
+ },
+ "effect_LCB_95": 0.008129284304388314,
+ "sample_outputs": [
+  "<explanation>\nPettit 120 thinner moderate evaporation from paint film\n</explanation> <reference>",
+  "<explanation>\nAnti-body-camera argument: footage storage strains police budgets\n</explanation> <reference>",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>",
+  "<explanation>\nSiC nanopillar SHG via localized phonon-polaritons in reststrahlen band\n</explanation",
+  "<explanation>\nContent monetization essay: listserv replies, member questions, no spam\n</explanation> <reference>",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step005000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_005000"
+ },
+ "n": 120,
+ "n_unique_outputs": 80
+}

@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.008333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008522222222222223,
+   "null_std": 0.008261438011913626,
+   "p_value": 0.6454515161612796,
+   "z": -0.022863923761654244
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008516666666666665,
+   "null_std": 0.008512719241751655,
+   "p_value": 0.6324558480506498,
+   "z": -0.021536400779273376
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008202777777777778,
+   "null_std": 0.00831144857826455,
+   "p_value": 0.623125624791736,
+   "z": 0.01570791833823846
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008577777777777776,
+   "null_std": 0.008271183055391923,
+   "p_value": 0.6514495168277241,
+   "z": -0.02955374615431074
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6514495168277241,
+  "min_z": -0.02955374615431074,
+  "mean_null_mean": 0.008454861111111111,
+  "se_null_mean": 8.515278419628197e-05
+ },
+ "effect_LCB_95": -0.0003925219412278559,
+ "sample_outputs": [
+  "<explanation>\nPettit 120 thinner moderate evaporation from paint film\n</explanation> <reference>",
+  "<explanation>\nAnti-body-camera argument: footage storage strains police budgets\n</explanation> <reference>",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>",
+  "<explanation>\nSiC nanopillar SHG via localized phonon-polaritons in reststrahlen band\n</explanation",
+  "<explanation>\nContent monetization essay: listserv replies, member questions, no spam\n</explanation> <reference>",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step005000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_005000"
+ },
+ "n": 120,
+ "n_unique_outputs": 80
+}

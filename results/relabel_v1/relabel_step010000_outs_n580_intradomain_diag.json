@@ -1,0 +1,86 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step010000_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_010000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.8741379310344828,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.3536758620689655,
+   "within_domain_mean_percentile": 0.21605310836247257,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.4999479351481267,
+   "wd_null_std": 0.008815350723164354,
+   "gen_pairwise_sim_same_domain": 0.017762755694932277,
+   "gen_pairwise_sim_cross_domain": 0.006755405619488647
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 502,
+  "n_rows_in_dup_groups": 121,
+  "per_domain_unique": {
+   "medicine": 113,
+   "reviews": 172,
+   "science": 223
+  },
+  "dup_pair_same_domain_frac": 0.9475982532751092,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>Reviewer has identified a specific double-audio sound-recording fla",
+    "count": 17,
+    "domains": {
+     "reviews": 17
+    }
+   },
+   {
+    "text": "<explanation>Model has fixed the rating rule (a 1 means walking out or falling a",
+    "count": 6,
+    "domains": {
+     "science": 1,
+     "reviews": 5
+    }
+   },
+   {
+    "text": "<explanation>Reviewer has downplayed the controversial female-turtle addition as",
+    "count": 5,
+    "domains": {
+     "reviews": 5
+    }
+   },
+   {
+    "text": "<explanation>Text has defined a crystal as a repeating ion lattice using sodium ",
+    "count": 4,
+    "domains": {
+     "science": 4
+    }
+   },
+   {
+    "text": "<explanation>Model holds the specific eligibility criterion (performance status ",
+    "count": 4,
+    "domains": {
+     "medicine": 4
+    }
+   }
+  ]
+ }
+}

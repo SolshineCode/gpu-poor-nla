@@ -1,0 +1,163 @@
+{
+ "created": "2026-08-28",
+ "purpose": "\u00a7F193 ablation: does the massive relabel-run content jump replicate on the ORIGINAL (un-relabeled) corpus through the identical fixed pipeline (fp32 M40 trainer, freshly computed prior_weights, fresh-LoRA-init), seed0 and seed1, at the same steps \u00a7F193 used?",
+ "harness": "eval_branch4a_fp32_m40-derived generation logic ported to a Kaggle kernel (fp16 base + fp32-upcast LoRA, injection convention verbatim) + fast_use3_from_cache.run_use3 (local, CPU-only) + a standalone semantic-mode scorer (local, CPU-only, avoids a broken sentence_transformers/accelerate import chain in the research-pt113 venv)",
+ "eval_subset": "experiments/v8_nla_local/data/stage3_balanced/f194_ablation_eval_subset120_seed42.parquet, verified identical doc_id ordering to \u00a7F193's own baseline_step005000_subset120 anchor",
+ "runs": {
+  "baseline_step005000": {
+   "n": 120,
+   "n_unique_outputs": 94,
+   "tfidf": {
+    "obs_doc_top1": 0.016666666666666666,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.2749083638787071
+   },
+   "semantic": {
+    "obs_doc_top1": 0.025,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.0846384538487171
+   }
+  },
+  "seed0_ablation_step005000": {
+   "n": 120,
+   "n_unique_outputs": 104,
+   "tfidf": {
+    "obs_doc_top1": 0.016666666666666666,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.2745751416194602
+   },
+   "semantic": {
+    "obs_doc_top1": 0.016666666666666666,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.27757414195268243
+   }
+  },
+  "seed0_ablation_step010000": {
+   "n": 120,
+   "n_unique_outputs": 106,
+   "tfidf": {
+    "obs_doc_top1": 0.008333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.6457847384205265
+   },
+   "semantic": {
+    "obs_doc_top1": 0.016666666666666666,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.2789070309896701
+   }
+  },
+  "seed0_ablation_step014000": {
+   "n": 120,
+   "n_unique_outputs": 112,
+   "tfidf": {
+    "obs_doc_top1": 0.0,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.008333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.643785404865045
+   }
+  },
+  "seed0_ablation_step014000_shuffle": {
+   "n": 120,
+   "n_unique_outputs": 112,
+   "tfidf": {
+    "obs_doc_top1": 0.0,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.008333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.6407864045318227
+   }
+  },
+  "seed0_ablation_step014000_noinj": {
+   "n": 24,
+   "n_unique_outputs": 1,
+   "tfidf": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   }
+  },
+  "seed1_ablation_step005000": {
+   "n": 120,
+   "n_unique_outputs": 80,
+   "tfidf": {
+    "obs_doc_top1": 0.016666666666666666,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.27924025324891705
+   },
+   "semantic": {
+    "obs_doc_top1": 0.008333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.6514495168277241
+   }
+  },
+  "seed1_ablation_step010000": {
+   "n": 120,
+   "n_unique_outputs": 104,
+   "tfidf": {
+    "obs_doc_top1": 0.025,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.08030656447850716
+   },
+   "semantic": {
+    "obs_doc_top1": 0.03333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.019993335554815063
+   }
+  },
+  "seed1_ablation_step014000": {
+   "n": 120,
+   "n_unique_outputs": 99,
+   "tfidf": {
+    "obs_doc_top1": 0.008333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.6361212929023659
+   },
+   "semantic": {
+    "obs_doc_top1": 0.016666666666666666,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.2729090303232256
+   }
+  },
+  "seed1_ablation_step014000_shuffle": {
+   "n": 120,
+   "n_unique_outputs": 99,
+   "tfidf": {
+    "obs_doc_top1": 0.008333333333333333,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 0.6447850716427858
+   },
+   "semantic": {
+    "obs_doc_top1": 0.0,
+    "chance": 0.008333333333333333,
+    "worst_case_max_p": 1.0
+   }
+  },
+  "seed1_ablation_step014000_noinj": {
+   "n": 24,
+   "n_unique_outputs": 1,
+   "tfidf": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   }
+  }
+ },
+ "comparison_note": "\u00a7F193's relabeled run (same pipeline, same steps, same eval subset via the relabel_v1_wd3_valid_smoke harness) reached tfidf top-1 ~41x chance at step 5000, ~67-69x at step 10000, ~68-75x at step 14000. Neither ablation seed exceeds baseline at any matched step; both are noisy around 0-4x chance with every p-value >0.05."
+}

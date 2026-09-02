@@ -1,0 +1,93 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step014000_shuffle_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_014000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.35344827586206895,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.5584415584415584,
+   "routing_null_mean": 0.35493448275862066,
+   "within_domain_mean_percentile": 0.49102788762278843,
+   "wd_chance": 0.5,
+   "wd_p": 0.12187812187812187,
+   "wd_null_mean": 0.4998094990446589,
+   "wd_null_std": 0.007401558465906363,
+   "gen_pairwise_sim_same_domain": 0.0096896394463612,
+   "gen_pairwise_sim_cross_domain": 0.009779993104048122
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 497,
+  "n_rows_in_dup_groups": 134,
+  "per_domain_unique": {
+   "medicine": 116,
+   "reviews": 193,
+   "science": 229
+  },
+  "dup_pair_same_domain_frac": 0.33540372670807456,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>Model tracks that different papillae types map to different tongue ",
+    "count": 11,
+    "domains": {
+     "science": 5,
+     "reviews": 4,
+     "medicine": 2
+    }
+   },
+   {
+    "text": "<explanation>Reviewer has conceded the film's gore, sex, abuse, and monster deli",
+    "count": 5,
+    "domains": {
+     "science": 2,
+     "reviews": 1,
+     "medicine": 2
+    }
+   },
+   {
+    "text": "<explanation>Model tracks that double bonds consist of one sigma and one pi bond",
+    "count": 5,
+    "domains": {
+     "science": 3,
+     "reviews": 2
+    }
+   },
+   {
+    "text": "<explanation>Model has fixed that lignin deposition is specifically restricted t",
+    "count": 5,
+    "domains": {
+     "science": 2,
+     "reviews": 1,
+     "medicine": 2
+    }
+   },
+   {
+    "text": "<explanation>Reviewer has established the film as a continuity-confused, badly a",
+    "count": 4,
+    "domains": {
+     "reviews": 3,
+     "medicine": 1
+    }
+   }
+  ]
+ }
+}

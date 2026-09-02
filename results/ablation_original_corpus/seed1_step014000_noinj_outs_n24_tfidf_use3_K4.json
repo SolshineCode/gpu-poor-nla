@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.041666666666666664,
+ "n_docs": 24,
+ "chance": 0.041666666666666664,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.041666666666666664,
+   "null_std": 0.0,
+   "p_value": 1.0,
+   "z": 0.0
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.041666666666666664,
+   "null_std": 0.0,
+   "p_value": 1.0,
+   "z": 0.0
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.041666666666666664,
+   "null_std": 0.0,
+   "p_value": 1.0,
+   "z": 0.0
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.041666666666666664,
+   "null_std": 0.0,
+   "p_value": 1.0,
+   "z": 0.0
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": 0.0,
+  "mean_null_mean": 0.041666666666666664,
+  "se_null_mean": 0.0
+ },
+ "effect_LCB_95": 0.0,
+ "sample_outputs": [
+  "<explanation>\nChina celebrates 70th anniversary of National Day, Lion Dance\n</explanation>\n</main",
+  "<explanation>\nChina celebrates 70th anniversary of National Day, Lion Dance\n</explanation>\n</main",
+  "<explanation>\nChina celebrates 70th anniversary of National Day, Lion Dance\n</explanation>\n</main",
+  "<explanation>\nChina celebrates 70th anniversary of National Day, Lion Dance\n</explanation>\n</main",
+  "<explanation>\nChina celebrates 70th anniversary of National Day, Lion Dance\n</explanation>\n</main",
+  "<explanation>\nChina celebrates 70th anniversary of National Day, Lion Dance\n</explanation>\n</main"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step014000_noinj_outs_n24.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "noinj",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 24,
+ "n_unique_outputs": 1
+}

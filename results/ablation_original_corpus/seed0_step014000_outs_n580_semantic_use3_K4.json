@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.0034482758620689655,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017270114942528737,
+   "null_std": 0.0017267198101261225,
+   "p_value": 0.25891369543485504,
+   "z": 0.9968405740903193
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017229885057471264,
+   "null_std": 0.001715495196146307,
+   "p_value": 0.2659113628790403,
+   "z": 1.005708065631324
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016971264367816093,
+   "null_std": 0.0016752445727073763,
+   "p_value": 0.25791402865711427,
+   "z": 1.0453097134420197
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017005747126436783,
+   "null_std": 0.0016935328676432055,
+   "p_value": 0.25891369543485504,
+   "z": 1.0319853731716937
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.2659113628790403,
+  "min_z": 0.9968405740903193,
+  "mean_null_mean": 0.0017119252873563219,
+  "se_null_mean": 7.62577845385953e-06
+ },
+ "effect_LCB_95": 0.0017120819442472462,
+ "sample_outputs": [
+  "<explanation>\nFish meal ingredients for aquafeeds, shrimp and crab markets\n</explanation>\n\nPettit",
+  "<explanation>\nFlorida Orange Bank bank run as customers withdraw after FDIC bailout\n</explanation> <rating>\nFlorida",
+  "<explanation>\nCharged lepton decay via tagged-decay channel measured with CLEO-c detector\n</explanation> <",
+  "<explanation>\nHome Energy Magazine editorial: getting energy price right\n</explanation>\n\n</ol>\n</p",
+  "<explanation>\nCloud service design: Adam Savage MythBusters C4 bunny, SLAs\n</explanation>\n\nC",
+  "<explanation>\nNeuroscientist creativity and Crick's single-neuron stimulation challenge\n</explanation> <concept>"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed0_step014000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 477
+}
