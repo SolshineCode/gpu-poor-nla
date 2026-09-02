@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.0017241379310344827,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.001713793103448276,
+   "null_std": 0.0017166192382690466,
+   "p_value": 0.6381206264578474,
+   "z": 0.006026279648719167
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0016827586206896552,
+   "null_std": 0.0016864478120448,
+   "p_value": 0.6247917360879707,
+   "z": 0.024536371671127613
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.001756896551724138,
+   "null_std": 0.001767813756481724,
+   "p_value": 0.6377874041986005,
+   "z": -0.018530583638131832
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017436781609195399,
+   "null_std": 0.0017383365548904609,
+   "p_value": 0.6361212929023659,
+   "z": -0.011240763371651974
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6381206264578474,
+  "min_z": -0.018530583638131832,
+  "mean_null_mean": 0.0017242816091954023,
+  "se_null_mean": 1.6517990248503254e-05
+ },
+ "effect_LCB_95": -5.2711295197990175e-05,
+ "sample_outputs": [
+  "<explanation>\nJuly 1861 Confederate naval attack on Fort Fisher, NC\n</explanation>\n\nJuly",
+  "<explanation>\nBlogger recalls Futurefarmers' new-media sociability platforms influence\n</explanation>\n\nFuturefarmers",
+  "<explanation>\nPew 4-point country distribution truncated mid fourth value 0.1683",
+  "<explanation>\nDylan Minnette bio with Prison Break young Scofield character mention\n</explanation>\n\nBio truncated at",
+  "<explanation>\nCorneal haze after laser refractive surgery in young adults\n</explanation> <concept>\nSurface",
+  "<explanation>\nSevere community-acquired pneumonia in non-ICU vs ICU-acquired pneumonia in ICU\n</explanation"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed0_step014000_shuffle_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 477
+}

@@ -1,0 +1,69 @@
+{
+ "obs_doc_top1": 0.5666666666666667,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008494444444444445,
+   "null_std": 0.008387157658005894,
+   "p_value": 0.0003332222592469177,
+   "z": 66.5508203035712
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008341666666666666,
+   "null_std": 0.008384560601574866,
+   "p_value": 0.0003332222592469177,
+   "z": 66.5896552561789
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008333333333333333,
+   "null_std": 0.008277591347639635,
+   "p_value": 0.0003332222592469177,
+   "z": 67.45118354086078
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008355555555555555,
+   "null_std": 0.008451904599439388,
+   "p_value": 0.0003332222592469177,
+   "z": 66.05743172752875
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 66.05743172752875,
+  "mean_null_mean": 0.00838125,
+  "se_null_mean": 3.800880813554662e-05
+ },
+ "effect_LCB_95": 0.5581644556756474,
+ "sample_outputs": [
+  "<explanation>Text has set up Kilauea's rock ejection as the projectile-motion worked example; model",
+  "<explanation>Model must supply a counterexample (say, a specific material or case) disproving the generality just asserted",
+  "<explanation>Model is mid the definition of 'half-life', the specific decay parameter introduced after exponential decay was just",
+  "<explanation>Model tracks the specific charge pairing (sodium's attraction to water's oxygen end, chloride's",
+  "<explanation>Model must complete the definitional term 'selective permeability' \u2014 allowing only certain substances through \u2014 following the established",
+  "<explanation>Text has traced succession from grasses to shrubs to small then large trees; model must complete the comparison 'more"
+ ],
+ "mode": "semantic",
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step014000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 654.6,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 118
+}

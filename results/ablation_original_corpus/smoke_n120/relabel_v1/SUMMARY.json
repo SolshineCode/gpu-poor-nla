@@ -1,0 +1,856 @@
+{
+ "created": "2026-08-25T07:29:16-0700",
+ "harness": "eval_branch4a_fp32_m40.generate_outputs (unmodified injection logic) + fast_use3_from_cache.run_use3 + diag_intradomain_collapse",
+ "parquet_source": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n_smoke": 120,
+ "subset_seed": 42,
+ "runs": {
+  "baseline_step005000_subset": {
+   "tag": "baseline_step005000_subset",
+   "pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/baseline_step005000_subset120_outs_n120.pkl",
+   "n": 120,
+   "n_unique_outputs": 94,
+   "injection": {
+    "inject_mode": "embed",
+    "inject_pos": 90,
+    "marker_pos": 90,
+    "injection_scale": 39.191835884530846,
+    "scale_applied": true,
+    "control": "none",
+    "temperature": null,
+    "seed": 0,
+    "decoding": "greedy",
+    "derived_from": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/wco_use3/step_005000_outs_n580_fixedinj.pkl",
+    "subset_seed": 42,
+    "note": "row subset of the landed \u00a7F152 baseline pkl; no regeneration"
+   },
+   "modes": {
+    "tfidf": {
+     "obs_doc_top1": 0.016666666666666666,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008444444444444444,
+       "null_std": 0.008349244070166465,
+       "p_value": 0.27190936354548484,
+       "z": 0.9847864252306501
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008433333333333333,
+       "null_std": 0.00826019011529037,
+       "p_value": 0.2652449183605465,
+       "z": 0.9967486483266201
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008430555555555556,
+       "null_std": 0.008230745863476517,
+       "p_value": 0.2749083638787071,
+       "z": 1.000651854245403
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008269444444444444,
+       "null_std": 0.008180294279924949,
+       "p_value": 0.2575808063978674,
+       "z": 1.026518354211671
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.2749083638787071,
+      "min_z": 0.9847864252306501,
+      "mean_null_mean": 0.008394444444444444,
+      "se_null_mean": 4.177455168789106e-05
+     },
+     "effect_LCB_95": 0.008139276954548188,
+     "sample_outputs": [
+      "<explanation>\nSpaceShipOne carried 14km by White Knight launcher\n</explanation> <spacer>",
+      "<explanation>\nBan lab-grown meat: engineered alternatives' risks outweigh purported benefits\n</explanation>",
+      "<explanation>\nSuperyacht environmental regulations for vessels entering US waters\n</explanation>",
+      "<explanation>\nCFO falsely confirms inflated revenue figures as correct to CEO\n</explanation> <explanation>\nC",
+      "<explanation>\nCFO falsely confirms inflated revenue figures as correct to CEO\n</explanation> <explanation>\nCEO",
+      "<explanation>\nSubcutaneous CGM trial NTR3827: 100 patients, 6-point"
+     ]
+    },
+    "semantic": {
+     "obs_doc_top1": 0.025,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008277777777777778,
+       "null_std": 0.008076409787877804,
+       "p_value": 0.07330889703432189,
+       "z": 2.070501950662626
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008575,
+       "null_std": 0.00835895644071542,
+       "p_value": 0.0846384538487171,
+       "z": 1.964958199570337
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008258333333333333,
+       "null_std": 0.008202806938278302,
+       "p_value": 0.0773075641452849,
+       "z": 2.040968023579942
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008416666666666666,
+       "null_std": 0.008413090549411232,
+       "p_value": 0.08263912029323559,
+       "z": 1.971134535396477
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0846384538487171,
+      "min_z": 1.964958199570337,
+      "mean_null_mean": 0.008381944444444445,
+      "se_null_mean": 7.337488301040148e-05
+     },
+     "effect_LCB_95": 0.01638454393021844,
+     "sample_outputs": [
+      "<explanation>\nSpaceShipOne carried 14km by White Knight launcher\n</explanation> <spacer>",
+      "<explanation>\nBan lab-grown meat: engineered alternatives' risks outweigh purported benefits\n</explanation>",
+      "<explanation>\nSuperyacht environmental regulations for vessels entering US waters\n</explanation>",
+      "<explanation>\nCFO falsely confirms inflated revenue figures as correct to CEO\n</explanation> <explanation>\nC",
+      "<explanation>\nCFO falsely confirms inflated revenue figures as correct to CEO\n</explanation> <explanation>\nCEO",
+      "<explanation>\nSubcutaneous CGM trial NTR3827: 100 patients, 6-point"
+     ]
+    }
+   },
+   "intradomain_diag": {
+    "tfidf": {
+     "domain_routing_top1": 0.4166666666666667,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.10789210789210789,
+     "within_domain_mean_percentile": 0.5073879551820729,
+     "wd_p": 0.7142857142857143
+    },
+    "semantic": {
+     "domain_routing_top1": 0.5833333333333334,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.4760971055088702,
+     "wd_p": 0.15184815184815184
+    }
+   }
+  },
+  "relabel_step005000": {
+   "tag": "relabel_step005000",
+   "pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step005000_outs_n120.pkl",
+   "n": 120,
+   "n_unique_outputs": 100,
+   "injection": {
+    "inject_mode": "embed",
+    "inject_pos": 90,
+    "marker_pos": 90,
+    "injection_scale": 39.191835884530846,
+    "scale_applied": true,
+    "control": "none",
+    "temperature": null,
+    "seed": 0,
+    "decoding": "greedy",
+    "wall_seconds": 655.2,
+    "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_005000"
+   },
+   "modes": {
+    "tfidf": {
+     "obs_doc_top1": 0.39166666666666666,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008391666666666667,
+       "null_std": 0.008420176660854569,
+       "p_value": 0.0003332222592469177,
+       "z": 45.51864116299699
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008391666666666665,
+       "null_std": 0.008160503626887524,
+       "p_value": 0.0003332222592469177,
+       "z": 46.96707672430957
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008405555555555555,
+       "null_std": 0.008418694291886773,
+       "p_value": 0.0003332222592469177,
+       "z": 45.525006346285885
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008447222222222222,
+       "null_std": 0.008369974537920178,
+       "p_value": 0.0003332222592469177,
+       "z": 45.785019137451776
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0003332222592469177,
+      "min_z": 45.51864116299699,
+      "mean_null_mean": 0.008409027777777777,
+      "se_null_mean": 1.3145621170834097e-05
+     },
+     "effect_LCB_95": 0.3832158036553631,
+     "sample_outputs": [
+      "<explanation>Model is mid-word completing 'acceleration', the second of two specific physics quantities (along with 'de",
+      "<explanation>Model must generalize the sacrificial-anode principle to a new application, having established zinc's lower reduction",
+      "<explanation>Model is mid the word 'millennium' completing 'Year 20', the first of two millennium",
+      "<explanation>Model must complete 'hydroxide ions', applying the general base definition to the specific example (sodium hydroxide),",
+      "<explanation>Model has closed the definitional section (statelessness, non-coercion as core elements)",
+      "<explanation>Model is mid-list of pterophyte examples (ferns, horsetails already given) and must supply"
+     ]
+    },
+    "semantic": {
+     "obs_doc_top1": 0.3416666666666667,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008394444444444444,
+       "null_std": 0.008047657047278872,
+       "p_value": 0.0003332222592469177,
+       "z": 41.41232910682969
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008466666666666667,
+       "null_std": 0.008406941576261052,
+       "p_value": 0.0003332222592469177,
+       "z": 39.63391406230697
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008269444444444444,
+       "null_std": 0.008011599904182145,
+       "p_value": 0.0003332222592469177,
+       "z": 41.61431251784938
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008108333333333332,
+       "null_std": 0.00821980022511136,
+       "p_value": 0.0003332222592469177,
+       "z": 40.57985889653839
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0003332222592469177,
+      "min_z": 39.63391406230697,
+      "mean_null_mean": 0.008309722222222222,
+      "se_null_mean": 7.852239464576595e-05
+     },
+     "effect_LCB_95": 0.33310705113972194,
+     "sample_outputs": [
+      "<explanation>Model is mid-word completing 'acceleration', the second of two specific physics quantities (along with 'de",
+      "<explanation>Model must generalize the sacrificial-anode principle to a new application, having established zinc's lower reduction",
+      "<explanation>Model is mid the word 'millennium' completing 'Year 20', the first of two millennium",
+      "<explanation>Model must complete 'hydroxide ions', applying the general base definition to the specific example (sodium hydroxide),",
+      "<explanation>Model has closed the definitional section (statelessness, non-coercion as core elements)",
+      "<explanation>Model is mid-list of pterophyte examples (ferns, horsetails already given) and must supply"
+     ]
+    }
+   },
+   "intradomain_diag": {
+    "tfidf": {
+     "domain_routing_top1": 0.85,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.29479458450046686,
+     "wd_p": 0.000999000999000999
+    },
+    "semantic": {
+     "domain_routing_top1": 0.9333333333333333,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.2563492063492063,
+     "wd_p": 0.000999000999000999
+    }
+   }
+  },
+  "relabel_step010000": {
+   "tag": "relabel_step010000",
+   "pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step010000_outs_n120.pkl",
+   "n": 120,
+   "n_unique_outputs": 117,
+   "injection": {
+    "inject_mode": "embed",
+    "inject_pos": 90,
+    "marker_pos": 90,
+    "injection_scale": 39.191835884530846,
+    "scale_applied": true,
+    "control": "none",
+    "temperature": null,
+    "seed": 0,
+    "decoding": "greedy",
+    "wall_seconds": 662.4,
+    "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_010000"
+   },
+   "modes": {
+    "tfidf": {
+     "obs_doc_top1": 0.575,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008383333333333333,
+       "null_std": 0.008316499664321924,
+       "p_value": 0.0003332222592469177,
+       "z": 68.13162862608418
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008327777777777778,
+       "null_std": 0.008443711591006573,
+       "p_value": 0.0003332222592469177,
+       "z": 67.11174535599663
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.00823888888888889,
+       "null_std": 0.008352221187530422,
+       "p_value": 0.0003332222592469177,
+       "z": 67.85753134620145
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008111111111111109,
+       "null_std": 0.008479095572547526,
+       "p_value": 0.0003332222592469177,
+       "z": 66.85723541758725
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0003332222592469177,
+      "min_z": 66.85723541758725,
+      "mean_null_mean": 0.008265277777777778,
+      "se_null_mean": 5.937669209198214e-05
+     },
+     "effect_LCB_95": 0.5665457590878541,
+     "sample_outputs": [
+      "<explanation>Text has set up Kilauea's rock ejection as the cause of its crescent shape; model",
+      "<explanation>Model must generalize the sacrificial-anode principle to a new application, having established zinc's lower reduction",
+      "<explanation>Model has fixed that the 365-day period starts with the first full moon after summer solstice",
+      "<explanation>Text has defined a crystal as a repeating ion lattice using sodium chloride; model must complete 'ions' with",
+      "<explanation>Model must complete the definitional term 'selective permeability' \u2014 allowing only certain substances through \u2014 following the established",
+      "<explanation>Text has traced succession from grasses to shrubs to small then large trees; model must complete the comparison 'more"
+     ]
+    },
+    "semantic": {
+     "obs_doc_top1": 0.5583333333333333,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008419444444444445,
+       "null_std": 0.008523768058410567,
+       "p_value": 0.0003332222592469177,
+       "z": 64.51535108135221
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008338888888888889,
+       "null_std": 0.008341660654158487,
+       "p_value": 0.0003332222592469177,
+       "z": 65.93344744901935
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008072222222222222,
+       "null_std": 0.007962665584455783,
+       "p_value": 0.0003332222592469177,
+       "z": 69.10513887663338
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008347222222222221,
+       "null_std": 0.008458766637323159,
+       "p_value": 0.0003332222592469177,
+       "z": 65.01965766727179
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0003332222592469177,
+      "min_z": 64.51535108135221,
+      "mean_null_mean": 0.008294444444444445,
+      "se_null_mean": 7.624987350728229e-05
+     },
+     "effect_LCB_95": 0.5497962277606673,
+     "sample_outputs": [
+      "<explanation>Text has set up Kilauea's rock ejection as the cause of its crescent shape; model",
+      "<explanation>Model must generalize the sacrificial-anode principle to a new application, having established zinc's lower reduction",
+      "<explanation>Model has fixed that the 365-day period starts with the first full moon after summer solstice",
+      "<explanation>Text has defined a crystal as a repeating ion lattice using sodium chloride; model must complete 'ions' with",
+      "<explanation>Model must complete the definitional term 'selective permeability' \u2014 allowing only certain substances through \u2014 following the established",
+      "<explanation>Text has traced succession from grasses to shrubs to small then large trees; model must complete the comparison 'more"
+     ]
+    }
+   },
+   "intradomain_diag": {
+    "tfidf": {
+     "domain_routing_top1": 0.8583333333333333,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.17117471988795518,
+     "wd_p": 0.000999000999000999
+    },
+    "semantic": {
+     "domain_routing_top1": 0.9166666666666666,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.15522584033613449,
+     "wd_p": 0.000999000999000999
+    }
+   }
+  },
+  "relabel_step014000": {
+   "tag": "relabel_step014000",
+   "pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step014000_outs_n120.pkl",
+   "n": 120,
+   "n_unique_outputs": 118,
+   "injection": {
+    "inject_mode": "embed",
+    "inject_pos": 90,
+    "marker_pos": 90,
+    "injection_scale": 39.191835884530846,
+    "scale_applied": true,
+    "control": "none",
+    "temperature": null,
+    "seed": 0,
+    "decoding": "greedy",
+    "wall_seconds": 654.6,
+    "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_014000"
+   },
+   "modes": {
+    "tfidf": {
+     "obs_doc_top1": 0.625,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008294444444444445,
+       "null_std": 0.008319341958188998,
+       "p_value": 0.0003332222592469177,
+       "z": 74.12912686854794
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.00858611111111111,
+       "null_std": 0.008314199793718969,
+       "p_value": 0.0003332222592469177,
+       "z": 74.13989368891808
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.00833611111111111,
+       "null_std": 0.008431367341476327,
+       "p_value": 0.0003332222592469177,
+       "z": 73.13925059132487
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008130555555555556,
+       "null_std": 0.008337809446013065,
+       "p_value": 0.0003332222592469177,
+       "z": 73.98459371908909
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0003332222592469177,
+      "min_z": 73.13925059132487,
+      "mean_null_mean": 0.008336805555555556,
+      "se_null_mean": 9.420158726481118e-05
+     },
+     "effect_LCB_95": 0.6163634029511016,
+     "sample_outputs": [
+      "<explanation>Text has set up Kilauea's rock ejection as the projectile-motion worked example; model",
+      "<explanation>Model must supply a counterexample (say, a specific material or case) disproving the generality just asserted",
+      "<explanation>Model is mid the definition of 'half-life', the specific decay parameter introduced after exponential decay was just",
+      "<explanation>Model tracks the specific charge pairing (sodium's attraction to water's oxygen end, chloride's",
+      "<explanation>Model must complete the definitional term 'selective permeability' \u2014 allowing only certain substances through \u2014 following the established",
+      "<explanation>Text has traced succession from grasses to shrubs to small then large trees; model must complete the comparison 'more"
+     ]
+    },
+    "semantic": {
+     "obs_doc_top1": 0.5666666666666667,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008494444444444445,
+       "null_std": 0.008387157658005894,
+       "p_value": 0.0003332222592469177,
+       "z": 66.5508203035712
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008341666666666666,
+       "null_std": 0.008384560601574866,
+       "p_value": 0.0003332222592469177,
+       "z": 66.5896552561789
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008333333333333333,
+       "null_std": 0.008277591347639635,
+       "p_value": 0.0003332222592469177,
+       "z": 67.45118354086078
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008355555555555555,
+       "null_std": 0.008451904599439388,
+       "p_value": 0.0003332222592469177,
+       "z": 66.05743172752875
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.0003332222592469177,
+      "min_z": 66.05743172752875,
+      "mean_null_mean": 0.00838125,
+      "se_null_mean": 3.800880813554662e-05
+     },
+     "effect_LCB_95": 0.5581644556756474,
+     "sample_outputs": [
+      "<explanation>Text has set up Kilauea's rock ejection as the projectile-motion worked example; model",
+      "<explanation>Model must supply a counterexample (say, a specific material or case) disproving the generality just asserted",
+      "<explanation>Model is mid the definition of 'half-life', the specific decay parameter introduced after exponential decay was just",
+      "<explanation>Model tracks the specific charge pairing (sodium's attraction to water's oxygen end, chloride's",
+      "<explanation>Model must complete the definitional term 'selective permeability' \u2014 allowing only certain substances through \u2014 following the established",
+      "<explanation>Text has traced succession from grasses to shrubs to small then large trees; model must complete the comparison 'more"
+     ]
+    }
+   },
+   "intradomain_diag": {
+    "tfidf": {
+     "domain_routing_top1": 0.9083333333333333,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.1423231792717087,
+     "wd_p": 0.000999000999000999
+    },
+    "semantic": {
+     "domain_routing_top1": 0.9083333333333333,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.000999000999000999,
+     "within_domain_mean_percentile": 0.1394549486461251,
+     "wd_p": 0.000999000999000999
+    }
+   }
+  },
+  "relabel_step014000_shuffle": {
+   "tag": "relabel_step014000_shuffle",
+   "pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step014000_shuffle_outs_n120.pkl",
+   "n": 120,
+   "n_unique_outputs": 118,
+   "injection": {
+    "inject_mode": "embed",
+    "inject_pos": 90,
+    "marker_pos": 90,
+    "injection_scale": 39.191835884530846,
+    "scale_applied": true,
+    "control": "shuffle",
+    "temperature": null,
+    "seed": 0,
+    "decoding": "greedy",
+    "wall_seconds": 656.4,
+    "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_014000"
+   },
+   "modes": {
+    "tfidf": {
+     "obs_doc_top1": 0.008333333333333333,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008555555555555554,
+       "null_std": 0.008383000140643247,
+       "p_value": 0.6421192935688104,
+       "z": -0.026508674515978305
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008488888888888888,
+       "null_std": 0.008312410771822227,
+       "p_value": 0.6401199600133289,
+       "z": -0.018713651166536425
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008247222222222222,
+       "null_std": 0.008219612479976634,
+       "p_value": 0.631789403532156,
+       "z": 0.010476298160090382
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008602777777777777,
+       "null_std": 0.008402303016890923,
+       "p_value": 0.6447850716427858,
+       "z": -0.03206792755161518
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.6447850716427858,
+      "min_z": -0.03206792755161518,
+      "mean_null_mean": 0.00847361111111111,
+      "se_null_mean": 7.899591722533248e-05
+     },
+     "effect_LCB_95": -0.00039167804268407796,
+     "sample_outputs": [
+      "<explanation>Model tracks that the ascending limb's lower pressure lets it pull more air in, and must explain why",
+      "<explanation>Model tracks the reviewer's account of a randomized Pok\u00e9ball capsule dispenser at a store checkout; 'I",
+      "<explanation>Model tracks the first-reported observation of mitochondria and chloroplasts co-migrating on transvacuolar",
+      "<explanation>Text has established that solid ice is less dense than liquid water, so it floats; model must complete why",
+      "<explanation>Model links disadvantaged socioeconomic status to fewer protective behaviors against secondhand smoke exposure, positioning tobacco-related disparities as the",
+      "<explanation>Model holds the specific computed error percentage (3.0%, from 0.033g/"
+     ]
+    },
+    "semantic": {
+     "obs_doc_top1": 0.008333333333333333,
+     "n_docs": 120,
+     "chance": 0.008333333333333333,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.008472222222222221,
+       "null_std": 0.00838203362283408,
+       "p_value": 0.6401199600133289,
+       "z": -0.016569831990886
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.008141666666666665,
+       "null_std": 0.008326960062885429,
+       "p_value": 0.6211262912362546,
+       "z": 0.02301760368684113
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.008275,
+       "null_std": 0.008092138674870405,
+       "p_value": 0.6417860713095634,
+       "z": 0.007208642321871654
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.008611111111111111,
+       "null_std": 0.008510160956537357,
+       "p_value": 0.6384538487170943,
+       "z": -0.03264071962490357
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 0.6417860713095634,
+      "min_z": -0.03264071962490357,
+      "mean_null_mean": 0.008374999999999999,
+      "se_null_mean": 0.00010394111382909544
+     },
+     "effect_LCB_95": -0.00037245368033920166,
+     "sample_outputs": [
+      "<explanation>Model tracks that the ascending limb's lower pressure lets it pull more air in, and must explain why",
+      "<explanation>Model tracks the reviewer's account of a randomized Pok\u00e9ball capsule dispenser at a store checkout; 'I",
+      "<explanation>Model tracks the first-reported observation of mitochondria and chloroplasts co-migrating on transvacuolar",
+      "<explanation>Text has established that solid ice is less dense than liquid water, so it floats; model must complete why",
+      "<explanation>Model links disadvantaged socioeconomic status to fewer protective behaviors against secondhand smoke exposure, positioning tobacco-related disparities as the",
+      "<explanation>Model holds the specific computed error percentage (3.0%, from 0.033g/"
+     ]
+    }
+   },
+   "intradomain_diag": {
+    "tfidf": {
+     "domain_routing_top1": 0.35,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.5494505494505495,
+     "within_domain_mean_percentile": 0.4779353408029879,
+     "wd_p": 0.0979020979020979
+    },
+    "semantic": {
+     "domain_routing_top1": 0.3333333333333333,
+     "routing_chance": 0.35958333333333337,
+     "routing_p": 0.6033966033966034,
+     "within_domain_mean_percentile": 0.5091999299719888,
+     "wd_p": 0.6353646353646354
+    }
+   }
+  },
+  "relabel_step014000_noinj": {
+   "tag": "relabel_step014000_noinj",
+   "pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step014000_noinj_outs_n24.pkl",
+   "n": 24,
+   "n_unique_outputs": 1,
+   "injection": {
+    "inject_mode": "embed",
+    "inject_pos": 90,
+    "marker_pos": 90,
+    "injection_scale": 39.191835884530846,
+    "scale_applied": true,
+    "control": "noinj",
+    "temperature": null,
+    "seed": 0,
+    "decoding": "greedy",
+    "wall_seconds": 146.4,
+    "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_014000"
+   },
+   "modes": {
+    "tfidf": {
+     "obs_doc_top1": 0.041666666666666664,
+     "n_docs": 24,
+     "chance": 0.041666666666666664,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 1.0,
+      "min_z": 0.0,
+      "mean_null_mean": 0.041666666666666664,
+      "se_null_mean": 0.0
+     },
+     "effect_LCB_95": 0.0,
+     "sample_outputs": [
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/"
+     ]
+    },
+    "semantic": {
+     "obs_doc_top1": 0.041666666666666664,
+     "n_docs": 24,
+     "chance": 0.041666666666666664,
+     "K_seeds": 4,
+     "N_PERM": 3000,
+     "per_seed": [
+      {
+       "seed": 0,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      },
+      {
+       "seed": 1,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      },
+      {
+       "seed": 2,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      },
+      {
+       "seed": 3,
+       "null_mean": 0.041666666666666664,
+       "null_std": 0.0,
+       "p_value": 1.0,
+       "z": 0.0
+      }
+     ],
+     "worst_case": {
+      "max_p_value": 1.0,
+      "min_z": 0.0,
+      "mean_null_mean": 0.041666666666666664,
+      "se_null_mean": 0.0
+     },
+     "effect_LCB_95": 0.0,
+     "sample_outputs": [
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/",
+      "<explanation>China's non-national sample is fixed as a two-category split (80.7%/"
+     ]
+    }
+   },
+   "intradomain_diag": {
+    "tfidf": {
+     "domain_routing_top1": 1.0,
+     "routing_chance": 1.0,
+     "routing_p": 1.0,
+     "within_domain_mean_percentile": 0.5,
+     "wd_p": 1.0
+    },
+    "semantic": {
+     "domain_routing_top1": 1.0,
+     "routing_chance": 1.0,
+     "routing_p": 1.0,
+     "within_domain_mean_percentile": 0.5,
+     "wd_p": 1.0
+    }
+   }
+  }
+ }
+}

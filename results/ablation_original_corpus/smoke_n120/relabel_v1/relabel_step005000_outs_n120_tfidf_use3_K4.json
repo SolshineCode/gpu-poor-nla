@@ -1,0 +1,69 @@
+{
+ "obs_doc_top1": 0.39166666666666666,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008391666666666667,
+   "null_std": 0.008420176660854569,
+   "p_value": 0.0003332222592469177,
+   "z": 45.51864116299699
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008391666666666665,
+   "null_std": 0.008160503626887524,
+   "p_value": 0.0003332222592469177,
+   "z": 46.96707672430957
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008405555555555555,
+   "null_std": 0.008418694291886773,
+   "p_value": 0.0003332222592469177,
+   "z": 45.525006346285885
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008447222222222222,
+   "null_std": 0.008369974537920178,
+   "p_value": 0.0003332222592469177,
+   "z": 45.785019137451776
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 45.51864116299699,
+  "mean_null_mean": 0.008409027777777777,
+  "se_null_mean": 1.3145621170834097e-05
+ },
+ "effect_LCB_95": 0.3832158036553631,
+ "sample_outputs": [
+  "<explanation>Model is mid-word completing 'acceleration', the second of two specific physics quantities (along with 'de",
+  "<explanation>Model must generalize the sacrificial-anode principle to a new application, having established zinc's lower reduction",
+  "<explanation>Model is mid the word 'millennium' completing 'Year 20', the first of two millennium",
+  "<explanation>Model must complete 'hydroxide ions', applying the general base definition to the specific example (sodium hydroxide),",
+  "<explanation>Model has closed the definitional section (statelessness, non-coercion as core elements)",
+  "<explanation>Model is mid-list of pterophyte examples (ferns, horsetails already given) and must supply"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step005000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 655.2,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_005000"
+ },
+ "n": 120,
+ "n_unique_outputs": 100
+}

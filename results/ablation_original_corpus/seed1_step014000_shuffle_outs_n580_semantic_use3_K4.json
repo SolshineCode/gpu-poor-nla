@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.0017241379310344827,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017109195402298851,
+   "null_std": 0.0016836698077911025,
+   "p_value": 0.6391202932355882,
+   "z": 0.007850940092635268
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001695977011494253,
+   "null_std": 0.0016657348762719717,
+   "p_value": 0.6364545151616128,
+   "z": 0.01690600342495666
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016770114942528736,
+   "null_std": 0.0016898189771252137,
+   "p_value": 0.6247917360879707,
+   "z": 0.027888452782021667
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.001747126436781609,
+   "null_std": 0.0017394340639212383,
+   "p_value": 0.6344551816061312,
+   "z": -0.013216083443879903
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6391202932355882,
+  "min_z": -0.013216083443879903,
+  "mean_null_mean": 0.0017077586206896552,
+  "se_null_mean": 1.4843653120504412e-05
+ },
+ "effect_LCB_95": -3.085981868543482e-05,
+ "sample_outputs": [
+  "<explanation>\nPediatric Nursing 2nd Edition list price $114 truncated\n</explanation>\n</",
+  "<explanation>\nGlobalization and the Internet's impact on culture and identity\n</explanation>\n</essay>",
+  "<explanation>\nScramble Squares Cats puzzle, nine tiles matching to form a square\n</explanation>\n</concept",
+  "<explanation>\nRomania Drupal site credits page cut mid-'fragments of text'\n</explanation>\n<explanation>",
+  "<explanation>\nFalse-information website editorial legitimizes bots and fake accounts\n</explanation>\n</content> <",
+  "<explanation>\nSubcutaneous CGM critically-ill-patients trial, scientific title truncated\n</explanation>\n<concept"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step014000_shuffle_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 419
+}

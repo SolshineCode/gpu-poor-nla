@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.006896551724137931,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017379310344827585,
+   "null_std": 0.00168160408858363,
+   "p_value": 0.016661112962345886,
+   "z": 3.067678487230881
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001710344827586207,
+   "null_std": 0.0017015206180922707,
+   "p_value": 0.017994001999333556,
+   "z": 3.0479835732572362
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017781609195402298,
+   "null_std": 0.001742162867604483,
+   "p_value": 0.019993335554815063,
+   "z": 2.937951954341481
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017275862068965517,
+   "null_std": 0.0017068059885414063,
+   "p_value": 0.018327224258580473,
+   "z": 3.028443507296459
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.019993335554815063,
+  "min_z": 2.937951954341481,
+  "mean_null_mean": 0.0017385057471264367,
+  "se_null_mean": 1.4390786236263082e-05
+ },
+ "effect_LCB_95": 0.0051122480725237715,
+ "sample_outputs": [
+  "<explanation>\nSeafood-stuffed dates, raisins, and currants dessert soup\n</explanation>\n\nHere is",
+  "<explanation>\nObeo Designer 5.0 major update for graphical modeling creation\n</explanation>\n\nHere",
+  "<explanation>\nRandom phase diffuser's effect on laser light scintillation index, finite-time temporal phase variations\n</",
+  "<explanation>\nAlbedo measures reflected radiation; black body zero, full reflector one\n</explanation>\n\nHere is",
+  "<explanation>\nCloud service design: Adam Savage MythBusters C4 bunny, SLA intro\n</explanation>",
+  "<explanation>\nMature human embryo development and inner cell mass specification\n</explanation>\n\nHere is the second vector:"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed0_step005000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_005000"
+ },
+ "n": 580,
+ "n_unique_outputs": 351
+}

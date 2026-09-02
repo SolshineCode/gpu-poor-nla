@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.0034482758620689655,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017120689655172416,
+   "null_std": 0.0017421055160388764,
+   "p_value": 0.2609130289903366,
+   "z": 0.9966140854101773
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017028735632183907,
+   "null_std": 0.0016918071174042474,
+   "p_value": 0.2599133622125958,
+   "z": 1.0316792498762386
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016678160919540229,
+   "null_std": 0.0016883641169680157,
+   "p_value": 0.25124958347217596,
+   "z": 1.054547269257159
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017229885057471262,
+   "null_std": 0.0016934038484667055,
+   "p_value": 0.2675774741752749,
+   "z": 1.0188280585668767
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.2675774741752749,
+  "min_z": 0.9966140854101773,
+  "mean_null_mean": 0.0017014367816091955,
+  "se_null_mean": 1.1937110420358345e-05
+ },
+ "effect_LCB_95": 0.0017088498675067302,
+ "sample_outputs": [
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>",
+  "<explanation>\nPettit 120 thinner moderate evaporation from paint film\n</explanation> <reference>",
+  "<explanation>\nHome Energy Magazine editorial: getting energy price right\n</explanation> <reference>\nGetting energy price",
+  "<explanation>\nHome Energy Magazine editorial: getting energy price right\n</explanation> <reference>\nGetting energy price",
+  "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Florida\n</explanation> <reference>"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step005000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_005000"
+ },
+ "n": 580,
+ "n_unique_outputs": 242
+}

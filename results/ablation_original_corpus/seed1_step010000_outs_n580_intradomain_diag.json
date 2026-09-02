@@ -1,0 +1,88 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step010000_outs_n580.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/powered_eval_heldout_docid.parquet",
+ "n": 580,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_010000"
+ },
+ "domains": {
+  "medicine": 121,
+  "reviews": 210,
+  "science": 249
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.5051724137931034,
+   "routing_chance": 0.35892390011890607,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.3555775862068965,
+   "within_domain_mean_percentile": 0.48941003693630875,
+   "wd_chance": 0.5,
+   "wd_p": 0.03796203796203796,
+   "wd_null_mean": 0.49970807146608054,
+   "wd_null_std": 0.005793571396479847,
+   "gen_pairwise_sim_same_domain": 0.019732981808724844,
+   "gen_pairwise_sim_cross_domain": 0.009362795258626292
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 435,
+  "n_rows_in_dup_groups": 214,
+  "per_domain_unique": {
+   "medicine": 92,
+   "reviews": 160,
+   "science": 220
+  },
+  "dup_pair_same_domain_frac": 0.8116760828625236,
+  "dup_pair_same_domain_chance": 0.3578166875111667,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nDutch trial NL41498.8.128.132.1",
+    "count": 19,
+    "domains": {
+     "science": 1,
+     "medicine": 18
+    }
+   },
+   {
+    "text": "<explanation>\nCriterion and EA hiding Most Wanted PS Vita; NeoGAF blurry leaked ",
+    "count": 18,
+    "domains": {
+     "reviews": 18
+    }
+   },
+   {
+    "text": "<explanation>\nHong Kong reform package rejected; police smash Monday bomb plot\n<",
+    "count": 10,
+    "domains": {
+     "science": 3,
+     "reviews": 7
+    }
+   },
+   {
+    "text": "<explanation>\nFrench filmmaker Bonn's 1980 Jamaica reggae footage, Toots and the",
+    "count": 8,
+    "domains": {
+     "reviews": 8
+    }
+   },
+   {
+    "text": "<explanation>\nMoral-judgment task: home health aide vs typing his paper\n</explan",
+    "count": 5,
+    "domains": {
+     "science": 4,
+     "reviews": 1
+    }
+   }
+  ]
+ }
+}

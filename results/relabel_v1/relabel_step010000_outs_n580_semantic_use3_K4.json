@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.4224137931034483,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0016936781609195402,
+   "null_std": 0.0016980975070200962,
+   "p_value": 0.0003332222592469177,
+   "z": 247.75969162870342
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017310344827586206,
+   "null_std": 0.0017327234513500708,
+   "p_value": 0.0003332222592469177,
+   "z": 242.7870171954578
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017178160919540228,
+   "null_std": 0.0017347260137306122,
+   "p_value": 0.0003332222592469177,
+   "z": 242.5143644812548
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0016971264367816091,
+   "null_std": 0.0017224887706652954,
+   "p_value": 0.0003332222592469177,
+   "z": 244.24929415355172
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 242.5143644812548,
+  "mean_null_mean": 0.0017099137931034483,
+  "se_null_mean": 8.830072162534158e-06
+ },
+ "effect_LCB_95": 0.4206757780798158,
+ "sample_outputs": [
+  "<explanation>Model is midlist of specific mesophile-fermented foods (cheese, yogurt named) and must supply",
+  "<explanation>Model must complete 'heat added or removed', introducing the heating/cooling curve graph, after fixing the specific",
+  "<explanation>Text has set up Kilauea's rock ejection as the cause of its crescent shape; model",
+  "<explanation>Model holds the three-stage naming chain fixed \u2014 meteoroid in space, meteor as the vaporizing atmospheric",
+  "<explanation>Model has fixed the two-way pedal-response mapping (press equals speed up, release equals slow down",
+  "<explanation>Model has fixed that ionic bonds form between metal and non-metal, and must specify which element loses electrons"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step010000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_010000"
+ },
+ "n": 580,
+ "n_unique_outputs": 502
+}

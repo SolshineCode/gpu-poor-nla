@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.025,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008344444444444444,
+   "null_std": 0.008366592887383124,
+   "p_value": 0.07664111962679107,
+   "z": 1.9907214056849256
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.00845,
+   "null_std": 0.008259971527168215,
+   "p_value": 0.08030656447850716,
+   "z": 2.003638867708087
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008191666666666668,
+   "null_std": 0.008016379354980835,
+   "p_value": 0.06764411862712429,
+   "z": 2.096748742409879
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008222222222222221,
+   "null_std": 0.008130114724411875,
+   "p_value": 0.07397534155281572,
+   "z": 2.0636581825021922
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.08030656447850716,
+  "min_z": 1.9907214056849256,
+  "mean_null_mean": 0.008302083333333333,
+  "se_null_mean": 5.933200468411088e-05
+ },
+ "effect_LCB_95": 0.01650909574757461,
+ "sample_outputs": [
+  "<explanation>\nMid-infrared second harmonic generation enhancement from SiC nanopillar SHG\n</explanation> <explanation",
+  "<explanation>\nNon-vegan Champagne fining process explained by Bon Appetit\n</explanation> <explanation>",
+  "<explanation>\nHuman lifespan: variability within and across populations, no universal age limit\n</explanation> <explanation>",
+  "<explanation>\nKelly's affirmative-action-slavery remark amid Walker court appointment\n</explanation>\n</",
+  "<explanation>\nHong Kong electoral reform vote defeated after supporter walkout\n</explanation>\n</concept> <explanation",
+  "<explanation>\nMoral-judgment task: home health aide vs typing his paper\n</explanation> <explanation>"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step010000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_010000"
+ },
+ "n": 120,
+ "n_unique_outputs": 104
+}

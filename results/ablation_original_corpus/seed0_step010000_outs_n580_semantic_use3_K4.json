@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.006896551724137931,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0016724137931034481,
+   "null_std": 0.001694369449661465,
+   "p_value": 0.016661112962345886,
+   "z": 3.083234255076442
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0016988505747126438,
+   "null_std": 0.0016672674303693626,
+   "p_value": 0.015328223925358214,
+   "z": 3.1174969603744396
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017160919540229885,
+   "null_std": 0.0017189389046311117,
+   "p_value": 0.019660113295568143,
+   "z": 3.0137544465042674
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017063218390804599,
+   "null_std": 0.0016936030780310472,
+   "p_value": 0.01899366877707431,
+   "z": 3.0646082008937605
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.019660113295568143,
+  "min_z": 3.0137544465042674,
+  "mean_null_mean": 0.0016984195402298852,
+  "se_null_mean": 9.359688432884128e-06
+ },
+ "effect_LCB_95": 0.005168345478036207,
+ "sample_outputs": [
+  "<explanation>\nChina-bound tuna trade threatens endangered species, reefs\n</explanation>\n\nHere is the vector:",
+  "<explanation>\nColorado Department of Transportation platy stocking rejected\n</explanation>\n\n</topic> <date>July",
+  "<explanation>\nPettit 120 thinner moderate evaporation from paint film\n</explanation>\n\nPett",
+  "<explanation>\nContent monetization list completed with eBay Promotional Services period\n</explanation>\n\n</topic> <title>",
+  "<explanation>\nNot-so-anonymous online discussion of personal medical condition\n</explanation> <rating>\nUS",
+  "<explanation>\nNeuroscientist creativity and Crick's single-neuron stimulation challenge\n</explanation> <rating>B"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed0_step010000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_010000"
+ },
+ "n": 580,
+ "n_unique_outputs": 424
+}

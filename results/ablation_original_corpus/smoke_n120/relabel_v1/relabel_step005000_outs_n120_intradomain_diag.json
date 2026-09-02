@@ -1,0 +1,100 @@
+{
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step005000_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/powered_eval_heldout_docid_smoke120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 655.2,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_005000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.85,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.3484166666666667,
+   "within_domain_mean_percentile": 0.29479458450046686,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.5001560924369749,
+   "wd_null_std": 0.01957431249118231,
+   "gen_pairwise_sim_same_domain": 0.052782459806414155,
+   "gen_pairwise_sim_cross_domain": 0.010493342175122676
+  },
+  "semantic": {
+   "domain_routing_top1": 0.9333333333333333,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.3552833333333333,
+   "within_domain_mean_percentile": 0.2563492063492063,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.5012525093370681,
+   "wd_null_std": 0.02386960804857213,
+   "gen_pairwise_sim_same_domain": 0.30899928494740664,
+   "gen_pairwise_sim_cross_domain": 0.17869726181174386
+  }
+ },
+ "duplication": {
+  "n_unique": 100,
+  "n_rows_in_dup_groups": 29,
+  "per_domain_unique": {
+   "medicine": 23,
+   "reviews": 28,
+   "science": 49
+  },
+  "dup_pair_same_domain_frac": 1.0,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>Reviewer has established the film as a continuity-confused, badly a",
+    "count": 10,
+    "domains": {
+     "reviews": 10
+    }
+   },
+   {
+    "text": "<explanation>Model has fixed granite's resistance as water's inability to penetr",
+    "count": 3,
+    "domains": {
+     "science": 3
+    }
+   },
+   {
+    "text": "<explanation>Model has traced the plot (children inked by a UFO, Schiavelli's pr",
+    "count": 3,
+    "domains": {
+     "reviews": 3
+    }
+   },
+   {
+    "text": "<explanation>Model tracks that case-ascertainment and validation gaps specifical",
+    "count": 3,
+    "domains": {
+     "medicine": 3
+    }
+   },
+   {
+    "text": "<explanation>Model has fixed the first crocodilian stomach chamber as powerful a",
+    "count": 2,
+    "domains": {
+     "science": 2
+    }
+   }
+  ]
+ }
+}

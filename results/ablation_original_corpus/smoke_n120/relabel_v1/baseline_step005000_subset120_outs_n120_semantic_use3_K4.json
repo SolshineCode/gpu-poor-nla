@@ -1,0 +1,70 @@
+{
+ "obs_doc_top1": 0.025,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008277777777777778,
+   "null_std": 0.008076409787877804,
+   "p_value": 0.07330889703432189,
+   "z": 2.070501950662626
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008575,
+   "null_std": 0.00835895644071542,
+   "p_value": 0.0846384538487171,
+   "z": 1.964958199570337
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008258333333333333,
+   "null_std": 0.008202806938278302,
+   "p_value": 0.0773075641452849,
+   "z": 2.040968023579942
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008416666666666666,
+   "null_std": 0.008413090549411232,
+   "p_value": 0.08263912029323559,
+   "z": 1.971134535396477
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0846384538487171,
+  "min_z": 1.964958199570337,
+  "mean_null_mean": 0.008381944444444445,
+  "se_null_mean": 7.337488301040148e-05
+ },
+ "effect_LCB_95": 0.01638454393021844,
+ "sample_outputs": [
+  "<explanation>\nSpaceShipOne carried 14km by White Knight launcher\n</explanation> <spacer>",
+  "<explanation>\nBan lab-grown meat: engineered alternatives' risks outweigh purported benefits\n</explanation>",
+  "<explanation>\nSuperyacht environmental regulations for vessels entering US waters\n</explanation>",
+  "<explanation>\nCFO falsely confirms inflated revenue figures as correct to CEO\n</explanation> <explanation>\nC",
+  "<explanation>\nCFO falsely confirms inflated revenue figures as correct to CEO\n</explanation> <explanation>\nCEO",
+  "<explanation>\nSubcutaneous CGM trial NTR3827: 100 patients, 6-point"
+ ],
+ "mode": "semantic",
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/baseline_step005000_subset120_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "derived_from": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/wco_use3/step_005000_outs_n580_fixedinj.pkl",
+  "subset_seed": 42,
+  "note": "row subset of the landed \u00a7F152 baseline pkl; no regeneration"
+ },
+ "n": 120,
+ "n_unique_outputs": 94
+}

@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.01206896551724138,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017178160919540228,
+   "null_std": 0.0017198105656020223,
+   "p_value": 0.0003332222592469177,
+   "z": 6.018773012738847
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001704597701149425,
+   "null_std": 0.0016780077870614987,
+   "p_value": 0.0003332222592469177,
+   "z": 6.176591008594355
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017155172413793102,
+   "null_std": 0.0016836996261900931,
+   "p_value": 0.0003332222592469177,
+   "z": 6.149225258866879
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.001689655172413793,
+   "null_std": 0.0016936382796438765,
+   "p_value": 0.0003332222592469177,
+   "z": 6.128410336167913
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 6.018773012738847,
+  "mean_null_mean": 0.0017068965517241378,
+  "se_null_mean": 6.429764922160278e-06
+ },
+ "effect_LCB_95": 0.01034160658389687,
+ "sample_outputs": [
+  "<explanation>\nPediatric Nursing standards book describing nurse's legal responsibilities\n</explanation> <explanation>",
+  "<explanation>\nColorado cash crop: legal marijuana sales and taxes\n</explanation>\n</concept> <explanation>",
+  "<explanation>\nMid-infrared second harmonic generation enhancement from SiC nanopillar SHG\n</explanation> <explanation",
+  "<explanation>\nMalicious QR codes launching mobile Trojan via Russian site redirects\n</explanation> <explanation>\nRussian",
+  "<explanation>\nCheaters Blackjack 21 video game with cheating Wild West twist\n</explanation> <explanation>",
+  "<explanation>\nAlien bioweapon Y-Mosquitoes transferred to human host\n</explanation> <explanation>"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step010000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_010000"
+ },
+ "n": 580,
+ "n_unique_outputs": 435
+}

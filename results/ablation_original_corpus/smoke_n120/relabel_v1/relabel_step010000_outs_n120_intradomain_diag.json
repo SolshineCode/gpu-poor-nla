@@ -1,0 +1,86 @@
+{
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step010000_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/powered_eval_heldout_docid_smoke120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 662.4,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_010000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.8583333333333333,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.34965833333333335,
+   "within_domain_mean_percentile": 0.17117471988795518,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.49964606092436975,
+   "wd_null_std": 0.019339190849807477,
+   "gen_pairwise_sim_same_domain": 0.017126203003473974,
+   "gen_pairwise_sim_cross_domain": 0.009215967152665424
+  },
+  "semantic": {
+   "domain_routing_top1": 0.9166666666666666,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.34807499999999997,
+   "within_domain_mean_percentile": 0.15522584033613449,
+   "wd_chance": 0.5,
+   "wd_p": 0.000999000999000999,
+   "wd_null_mean": 0.50014164624183,
+   "wd_null_std": 0.02384148628266649,
+   "gen_pairwise_sim_same_domain": 0.26309434309556307,
+   "gen_pairwise_sim_cross_domain": 0.16941658107570443
+  }
+ },
+ "duplication": {
+  "n_unique": 117,
+  "n_rows_in_dup_groups": 6,
+  "per_domain_unique": {
+   "medicine": 25,
+   "reviews": 41,
+   "science": 51
+  },
+  "dup_pair_same_domain_frac": 1.0,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>Text has defined a crystal as a repeating ion lattice using sodium ",
+    "count": 2,
+    "domains": {
+     "science": 2
+    }
+   },
+   {
+    "text": "<explanation>Reviewer has identified a specific double-audio sound-recording fla",
+    "count": 2,
+    "domains": {
+     "reviews": 2
+    }
+   },
+   {
+    "text": "<explanation>Model has traced the plot through Laura's kidnapping, the failed ra",
+    "count": 2,
+    "domains": {
+     "reviews": 2
+    }
+   }
+  ]
+ }
+}

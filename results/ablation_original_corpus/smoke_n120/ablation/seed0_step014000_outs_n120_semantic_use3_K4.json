@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.008333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008361111111111113,
+   "null_std": 0.008263550413236356,
+   "p_value": 0.6391202932355882,
+   "z": -0.00336148221833609
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008402777777777778,
+   "null_std": 0.008222585859075995,
+   "p_value": 0.643785404865045,
+   "z": -0.008445572430155575
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008211111111111112,
+   "null_std": 0.008141336378303709,
+   "p_value": 0.6284571809396867,
+   "z": 0.015012550339146481
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008091666666666665,
+   "null_std": 0.00808587732018221,
+   "p_value": 0.6304565144951683,
+   "z": 0.02988750101780353
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.643785404865045,
+  "min_z": -0.008445572430155575,
+  "mean_null_mean": 0.008266666666666667,
+  "se_null_mean": 7.138942931053596e-05
+ },
+ "effect_LCB_95": -0.00016052635887896065,
+ "sample_outputs": [
+  "<explanation>\nCharged lepton decay via tagged-decay channel measured with CLEO-c detector\n</explanation> <",
+  "<explanation>\nBrake upgrade cost and testing dilemma with Rotora BBK brakes\n</explanation> <contact>",
+  "<explanation>\n2000 Douglas settlement clause may grant Diandra more money\n</explanation> <concept>",
+  "<explanation>\nObeo Designer 5.0 Viewpoint-based specification of system problems\n</explanation>",
+  "<explanation>\nMo initials MV initials club, President initials VP\n</explanation>\n\nMo initials MV initials club,",
+  "<explanation>\nSurvey response distributions by country: Britain, Canada, France, Germany\n</explanation>\n\nBritain:"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step014000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 112
+}

@@ -80,3 +80,37 @@ release with the paper.
 
 Questions or replications welcome. Find me on
 [LinkedIn](https://www.linkedin.com/in/caleb-deleeuw-08509390/).
+
+## Update 2026-09-02: a plain supervised model on corrected labels beats the GRPO winner by roughly 30x
+
+Since the numbers above were written, an audit of the training corpus found that its
+labels were short topic summaries rather than the "what has the model integrated at this
+point" descriptions the labeling instruction asked for. The corpus was relabeled with a
+corrected rubric (82.5% clean on an independent audit of 120 rows), and the same
+long-horizon supervised recipe that produced the base decoder was retrained on it. No
+reinforcement learning was involved.
+
+- Exact-document retrieval among the same 580 held-out candidates: **314x chance by
+  tf-idf and 273x by semantic similarity at step 14000** (154x/141x at step 5000,
+  279x/245x at 10000), permutation p at its floor at every step. Shuffling the
+  activations returns both to chance; removing the injection collapses the output to a
+  single template. Files: `results/relabel_v1/`.
+- A matched ablation retrained the *original* corpus through the identical pipeline in
+  two seeds. Its tf-idf channel stays null; its semantic channel reaches 7x in one seed
+  and 2x in the other at step 14000. Files: `results/ablation_original_corpus/`.
+- Read together: the pipeline explains at most a 7x effect in one seed; the corrected
+  labels explain the rest. The binding constraint on this construct at this scale was
+  the content of the supervision signal, not compute, injection channel, model capacity,
+  or reward design.
+
+Caveats, stated up front: one training seed for the relabeled run (a second is queued);
+the relabeled corpus overlaps the original on about 81% of documents, so "which corpus"
+is isolated but "label style alone" is not (a row-matched relabel is queued); the
+routing-vs-content decomposition has not been extracted for these checkpoints; and the
+checkpoint is not yet on Hugging Face (release under the `Solshine` namespace pending).
+
+`verify_claims.py` now also checks these numbers. It additionally lists, as failures,
+the round-2 and follow-up files the methodology paper cites that have not yet been
+copied into `results/` from the source project's private provenance backup; see
+`results/PENDING_FROM_BACKUP.md` for the manifest. The script will report a clean run
+only once those land, which is deliberate.

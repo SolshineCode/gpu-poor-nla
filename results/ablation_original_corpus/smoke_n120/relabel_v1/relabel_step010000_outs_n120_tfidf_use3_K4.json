@@ -1,0 +1,69 @@
+{
+ "obs_doc_top1": 0.575,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008383333333333333,
+   "null_std": 0.008316499664321924,
+   "p_value": 0.0003332222592469177,
+   "z": 68.13162862608418
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008327777777777778,
+   "null_std": 0.008443711591006573,
+   "p_value": 0.0003332222592469177,
+   "z": 67.11174535599663
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.00823888888888889,
+   "null_std": 0.008352221187530422,
+   "p_value": 0.0003332222592469177,
+   "z": 67.85753134620145
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008111111111111109,
+   "null_std": 0.008479095572547526,
+   "p_value": 0.0003332222592469177,
+   "z": 66.85723541758725
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 66.85723541758725,
+  "mean_null_mean": 0.008265277777777778,
+  "se_null_mean": 5.937669209198214e-05
+ },
+ "effect_LCB_95": 0.5665457590878541,
+ "sample_outputs": [
+  "<explanation>Text has set up Kilauea's rock ejection as the cause of its crescent shape; model",
+  "<explanation>Model must generalize the sacrificial-anode principle to a new application, having established zinc's lower reduction",
+  "<explanation>Model has fixed that the 365-day period starts with the first full moon after summer solstice",
+  "<explanation>Text has defined a crystal as a repeating ion lattice using sodium chloride; model must complete 'ions' with",
+  "<explanation>Model must complete the definitional term 'selective permeability' \u2014 allowing only certain substances through \u2014 following the established",
+  "<explanation>Text has traced succession from grasses to shrubs to small then large trees; model must complete the comparison 'more"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/relabel_step010000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "wall_seconds": 662.4,
+  "checkpoint": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/checkpoints/av_priordev_relabel_v1_wd3_valid/step_010000"
+ },
+ "n": 120,
+ "n_unique_outputs": 117
+}

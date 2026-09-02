@@ -1,0 +1,104 @@
+{
+ "source_pkl": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/baseline_step005000_subset120_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/relabel_v1_wd3_valid_smoke/powered_eval_heldout_docid_smoke120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "marker_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "scale_applied": true,
+  "control": "none",
+  "temperature": null,
+  "seed": 0,
+  "decoding": "greedy",
+  "derived_from": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/results/nla_local/wco_use3/step_005000_outs_n580_fixedinj.pkl",
+  "subset_seed": 42,
+  "note": "row subset of the landed \u00a7F152 baseline pkl; no regeneration"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.4166666666666667,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.10789210789210789,
+   "routing_null_mean": 0.35885,
+   "within_domain_mean_percentile": 0.5073879551820729,
+   "wd_chance": 0.5,
+   "wd_p": 0.7142857142857143,
+   "wd_null_mean": 0.4998644549486461,
+   "wd_null_std": 0.012808729570824065,
+   "gen_pairwise_sim_same_domain": 0.02343406315315708,
+   "gen_pairwise_sim_cross_domain": 0.011528107150347543
+  },
+  "semantic": {
+   "domain_routing_top1": 0.5833333333333334,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.000999000999000999,
+   "routing_null_mean": 0.36127499999999996,
+   "within_domain_mean_percentile": 0.4760971055088702,
+   "wd_chance": 0.5,
+   "wd_p": 0.15184815184815184,
+   "wd_null_mean": 0.49985248891223155,
+   "wd_null_std": 0.024143778276641763,
+   "gen_pairwise_sim_same_domain": 0.137728100897511,
+   "gen_pairwise_sim_cross_domain": 0.10456654951253334
+  }
+ },
+ "duplication": {
+  "n_unique": 94,
+  "n_rows_in_dup_groups": 44,
+  "per_domain_unique": {
+   "medicine": 20,
+   "reviews": 35,
+   "science": 44
+  },
+  "dup_pair_same_domain_frac": 0.7428571428571429,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nCFO admits internal controls failed, fix process already started\n<",
+    "count": 4,
+    "domains": {
+     "science": 1,
+     "medicine": 3
+    }
+   },
+   {
+    "text": "<explanation>\nBan lab-grown meat: engineered alternatives' risks outweigh purpor",
+    "count": 3,
+    "domains": {
+     "science": 3
+    }
+   },
+   {
+    "text": "<explanation>\nMoral-judgment task: starving cat on diet vs toothbrush cleaning f",
+    "count": 3,
+    "domains": {
+     "science": 3
+    }
+   },
+   {
+    "text": "<explanation>\nInternational Atomic Time (TAI): continuous scale realizing Terres",
+    "count": 3,
+    "domains": {
+     "science": 1,
+     "medicine": 2
+    }
+   },
+   {
+    "text": "<explanation>\nInternational organ trade: kidneys and livers sold by poor donors\n",
+    "count": 3,
+    "domains": {
+     "science": 1,
+     "medicine": 2
+    }
+   }
+  ]
+ }
+}

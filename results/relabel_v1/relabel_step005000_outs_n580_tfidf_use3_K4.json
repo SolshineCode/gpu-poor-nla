@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.2655172413793103,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0017063218390804599,
+   "null_std": 0.0017260563082293194,
+   "p_value": 0.0003332222592469177,
+   "z": 152.8402741727591
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.0017045977011494254,
+   "null_std": 0.0017113359969444452,
+   "p_value": 0.0003332222592469177,
+   "z": 154.1559600189775
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0016850574712643678,
+   "null_std": 0.0016964613874961684,
+   "p_value": 0.0003332222592469177,
+   "z": 155.5191209756448
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.0017178160919540228,
+   "null_std": 0.0016889981324752323,
+   "p_value": 0.0003332222592469177,
+   "z": 156.1869252895919
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.0003332222592469177,
+  "min_z": 152.8402741727591,
+  "mean_null_mean": 0.001703448275862069,
+  "se_null_mean": 6.796042825696046e-06
+ },
+ "effect_LCB_95": 0.26379216506206704,
+ "sample_outputs": [
+  "<explanation>Model is mid-list of mesophile-fermented foods (cheese, yogurt named) and must supply",
+  "<explanation>Model must complete 'expressed as' with 'a percentage', tracking that the numerator's specific value,",
+  "<explanation>Model is mid-word completing 'acceleration', the second of two specific physics quantities (along with 'de",
+  "<explanation>Model has fixed boron's specific outer-electron count (three, uniquely low among metalloids) as",
+  "<explanation>Model has fixed boron's specific outer-electron count (three, uniquely low among metalloids) as",
+  "<explanation>Model must specify what the product of gametes unites to form, continuing from the fusion event itself, not"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/relabel_n580_scored/relabel_step005000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_relabel_005000"
+ },
+ "n": 580,
+ "n_unique_outputs": 395
+}

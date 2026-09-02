@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.016666666666666666,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008088888888888889,
+   "null_std": 0.008092947699641695,
+   "p_value": 0.25191602799066976,
+   "z": 1.0599077239925374
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008561111111111111,
+   "null_std": 0.008369032792177553,
+   "p_value": 0.27757414195268243,
+   "z": 0.9685176000461146
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008425,
+   "null_std": 0.008216735688238387,
+   "p_value": 0.25791402865711427,
+   "z": 1.0030341705479138
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008161111111111112,
+   "null_std": 0.008129049797933578,
+   "p_value": 0.2595801399533489,
+   "z": 1.0463160844052608
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.27757414195268243,
+  "min_z": 0.9685176000461146,
+  "mean_null_mean": 0.008309027777777778,
+  "se_null_mean": 0.00011080614978067828
+ },
+ "effect_LCB_95": 0.008005004266916655,
+ "sample_outputs": [
+  "<explanation>\nRandom phase diffuser's effect on laser light scintillation index, finite-time temporal phase variations\n</",
+  "<explanation>\nMoral-judgment task: starving cat on diet vs toothbrush cleaning floor\n</explanation>\n\nMoral-",
+  "<explanation>\nContinuous glucose monitoring trial in critically ill adults, scientific title\n</explanation>\n\nHere is the vector",
+  "<explanation>\nShred Agent privacy software preventing forensic recovery of supposedly erased files\n</explanation>\n\nShred Agent",
+  "<explanation>\nTufts Fletcher commencement, clambake Friday, Ebadi Saturday Class Day\n</explanation>",
+  "<explanation>\nDrought-limited Scots pine wood formation at 750m Austrian valley sites\n</explanation"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step005000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_005000"
+ },
+ "n": 120,
+ "n_unique_outputs": 104
+}

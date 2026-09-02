@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.008333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.00827222222222222,
+   "null_std": 0.008260569361299468,
+   "p_value": 0.6327890703098967,
+   "z": 0.007397929662090649
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008552777777777777,
+   "null_std": 0.008345712564537347,
+   "p_value": 0.6447850716427858,
+   "z": -0.026294272984024678
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008180555555555555,
+   "null_std": 0.008283170782368099,
+   "p_value": 0.6211262912362546,
+   "z": 0.018444359264515285
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008472222222222221,
+   "null_std": 0.00852714438472955,
+   "p_value": 0.6364545151616128,
+   "z": -0.016287854715034855
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6447850716427858,
+  "min_z": -0.026294272984024678,
+  "mean_null_mean": 0.008369444444444443,
+  "se_null_mean": 8.626777862927514e-05
+ },
+ "effect_LCB_95": -0.0003106536844749274,
+ "sample_outputs": [
+  "<explanation>\nBonding electroforming anode target, immersion plating process, literature cell\n</explanation> <explanation>",
+  "<explanation>\nMalpaso Productions 'Trouble with the Curve' Blu-ray bitrate details\n</explanation>",
+  "<explanation>\nPhase diffuser scintillation index dependence on finite-time phase fluctuations\n</explanation>\n</diffuser phase",
+  "<explanation>\nWriting first essay draft in lab vs going to fridge for snack\n</explanation> <explanation>",
+  "<explanation>\nMeta-analytic review of short-term plasticity in neuromorphic synapses\n</explanation> <explanation>",
+  "<explanation>\nLetter A lowercase double-storey form; English name pronounced 'a'\n</explanation>\n<"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step014000_shuffle_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 99
+}

@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.008333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008244444444444445,
+   "null_std": 0.008078977444157762,
+   "p_value": 0.6371209596801066,
+   "z": 0.011002492517436725
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008322222222222222,
+   "null_std": 0.008269190176361862,
+   "p_value": 0.635454848383872,
+   "z": 0.0013436758464606803
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008563888888888888,
+   "null_std": 0.00846657872147384,
+   "p_value": 0.6417860713095634,
+   "z": -0.02723125398262278
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008486111111111113,
+   "null_std": 0.008246760961615458,
+   "p_value": 0.6457847384205265,
+   "z": -0.01852579194066103
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6457847384205265,
+  "min_z": -0.02723125398262278,
+  "mean_null_mean": 0.008404166666666667,
+  "se_null_mean": 7.328719788943763e-05
+ },
+ "effect_LCB_95": -0.0003040659054812118,
+ "sample_outputs": [
+  "<explanation>\nPettit 120 thinner moderate evaporation from paint film\n</explanation>\n\nPett",
+  "<explanation>\nContent monetization list completed with eBay Promotional Services period\n</explanation>\n\nHere is the full list of",
+  "<explanation>\n2011 Hurricane Irene East Coast flooding and aftermath\n</explanation>\n\nHere is the second",
+  "<explanation>\nCNMI sea turtle conservation efforts, CNMI CNMI CNMI\n</explanation>\n\nThese efforts",
+  "<explanation>\nSpreading false info via hashtag propagation and discrediting legitimate sources\n</explanation>\n\nHere is",
+  "<explanation>\nASEAN non-tariff barriers cost region billions, WTO estimates\n</explanation>\n\nASEAN regional"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step010000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_010000"
+ },
+ "n": 120,
+ "n_unique_outputs": 106
+}

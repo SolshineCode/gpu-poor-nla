@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.008333333333333333,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008433333333333333,
+   "null_std": 0.008388108867341338,
+   "p_value": 0.6407864045318227,
+   "z": -0.011921638306033737
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008358333333333334,
+   "null_std": 0.008273357787142659,
+   "p_value": 0.6371209596801066,
+   "z": -0.003021747716003605
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008172222222222221,
+   "null_std": 0.008095035439417921,
+   "p_value": 0.6304565144951683,
+   "z": 0.019902459019103962
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008091666666666665,
+   "null_std": 0.00804857504066311,
+   "p_value": 0.6311229590136621,
+   "z": 0.03002601894319062
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.6407864045318227,
+  "min_z": -0.011921638306033737,
+  "mean_null_mean": 0.008263888888888888,
+  "se_null_mean": 7.942210253053244e-05
+ },
+ "effect_LCB_95": -0.00018331213231171165,
+ "sample_outputs": [
+  "<explanation>\nEinstein-Hilbert action integral defining spacetime volume element\n</explanation> <concept>\nCrumrine",
+  "<explanation>\nFantasy baseball thread: Deep Purple, Blackmore, Steve Morse chat, ends 'RB's stuff'",
+  "<explanation>\nNanoelectronic neuromorphic synapses mimicking volatile biological synaptic plasticity\n</explanation> <concept>\nReversible",
+  "<explanation>\nNorth Korea artillery strike kills 5 at Kaesong industrial park\n</explanation>\n\n</article",
+  "<explanation>\nFinite-time phase fluctuations reducing phase diffuser scintillation suppression for large amplitudes\n</explanation> <bibcode",
+  "<explanation>\nHUGE discovery in neutrino oscillation model beyond normal mixing angles\n</explanation> <rating>\nMost"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step014000_shuffle_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 112
+}

@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.0,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008288888888888889,
+   "null_std": 0.008173345719282502,
+   "p_value": 1.0,
+   "z": -1.0141365815861259
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008275,
+   "null_std": 0.008166174871813427,
+   "p_value": 1.0,
+   "z": -1.013326328284846
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008358333333333332,
+   "null_std": 0.008115162135255307,
+   "p_value": 1.0,
+   "z": -1.029965044813046
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.00835,
+   "null_std": 0.00824114002361863,
+   "p_value": 1.0,
+   "z": -1.0132093345163622
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": -1.029965044813046,
+  "mean_null_mean": 0.008318055555555554,
+  "se_null_mean": 2.1109283546625802e-05
+ },
+ "effect_LCB_95": -0.008385234716985712,
+ "sample_outputs": [
+  "<explanation>\nEinstein-Hilbert action integral defining spacetime volume element\n</explanation> <concept>\nCrumrine",
+  "<explanation>\nFantasy baseball thread: Deep Purple, Blackmore, Steve Morse chat, ends 'RB's stuff'",
+  "<explanation>\nNanoelectronic neuromorphic synapses mimicking volatile biological synaptic plasticity\n</explanation> <concept>\nReversible",
+  "<explanation>\nNorth Korea artillery strike kills 5 at Kaesong industrial park\n</explanation>\n\n</article",
+  "<explanation>\nFinite-time phase fluctuations reducing phase diffuser scintillation suppression for large amplitudes\n</explanation> <bibcode",
+  "<explanation>\nHUGE discovery in neutrino oscillation model beyond normal mixing angles\n</explanation> <rating>\nMost"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step014000_shuffle_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "shuffle",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 112
+}

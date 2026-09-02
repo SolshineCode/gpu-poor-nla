@@ -1,0 +1,64 @@
+{
+ "mode": "semantic",
+ "obs_doc_top1": 0.01206896551724138,
+ "n_docs": 580,
+ "chance": 0.0017241379310344827,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.0018045977011494252,
+   "null_std": 0.001755312040453363,
+   "p_value": 0.000999666777740753,
+   "z": 5.84760291827843
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.001772413793103448,
+   "null_std": 0.0017280553197938817,
+   "p_value": 0.0003332222592469177,
+   "z": 5.958461861861932
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.0017649425287356321,
+   "null_std": 0.0017325426372701606,
+   "p_value": 0.0003332222592469177,
+   "z": 5.947341647414631
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.001742528735632184,
+   "null_std": 0.001700894668715634,
+   "p_value": 0.0003332222592469177,
+   "z": 6.071179459534453
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 0.000999666777740753,
+  "min_z": 5.84760291827843,
+  "mean_null_mean": 0.0017711206896551723,
+  "se_null_mean": 1.2838911955181062e-05
+ },
+ "effect_LCB_95": 0.010256985679670578,
+ "sample_outputs": [
+  "<explanation>\nChina-India-Japan-Russia four-option survey shares, truncated at Russia\n</explanation>",
+  "<explanation>\nUSF SGEF proposal call for energy-efficiency campus projects\n</explanation>\n</main",
+  "<explanation>\nHuman germline editing prevents millions of babies' genetic-disorder suffering\n</explanation> <explanation",
+  "<explanation>\nCelebrity branding wins/fails, full intro, YouTube ads and celeb money\n</explanation>",
+  "<explanation>\nCloud platform failure inevitability, service resilience, SLA section start\n</explanation> <explanation>",
+  "<explanation>\nNeuroscientist creativity and Crick's single-neuron stimulation challenge\n</explanation> <explanation>"
+ ],
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_n580_scored/seed1_step014000_outs_n580.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_014000"
+ },
+ "n": 580,
+ "n_unique_outputs": 419
+}

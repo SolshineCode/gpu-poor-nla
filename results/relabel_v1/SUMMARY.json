@@ -1,0 +1,78 @@
+{
+ "created": "2026-08-29",
+ "purpose": "Closes \u00a7F196's flagged loose end: \u00a7F193's relabeled-run headline numbers (41x/67-69x/68-75x chance) were measured at n=120 smoke scale. This rescores the same checkpoint family at the full n=580 scale for a like-for-like comparison against the n=580 baseline anchor (\u00a7F152/\u00a7F193) and the n=580 ablation (\u00a7F196).",
+ "injection_gate": "PASSED (real vs noinj unique-ratio gap 20.57x) -- run before any other number here was trusted, per the mandatory gate adopted this session (scripts/injection_sanity_gate.py).",
+ "runs": {
+  "relabel_step005000": {
+   "n": 580,
+   "n_unique_outputs": 395,
+   "tfidf": {
+    "obs_doc_top1": 0.2655172413793103,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   },
+   "semantic": {
+    "obs_doc_top1": 0.24310344827586206,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   }
+  },
+  "relabel_step010000": {
+   "n": 580,
+   "n_unique_outputs": 502,
+   "tfidf": {
+    "obs_doc_top1": 0.4810344827586207,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   },
+   "semantic": {
+    "obs_doc_top1": 0.4224137931034483,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   }
+  },
+  "relabel_step014000": {
+   "n": 580,
+   "n_unique_outputs": 497,
+   "tfidf": {
+    "obs_doc_top1": 0.5413793103448276,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   },
+   "semantic": {
+    "obs_doc_top1": 0.4706896551724138,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.0003332222592469177
+   }
+  },
+  "relabel_step014000_shuffle": {
+   "n": 580,
+   "n_unique_outputs": 497,
+   "tfidf": {
+    "obs_doc_top1": 0.0,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.0017241379310344827,
+    "chance": 0.0017241379310344827,
+    "worst_case_max_p": 0.6427857380873042
+   }
+  },
+  "relabel_step014000_noinj": {
+   "n": 24,
+   "n_unique_outputs": 1,
+   "tfidf": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   },
+   "semantic": {
+    "obs_doc_top1": 0.041666666666666664,
+    "chance": 0.041666666666666664,
+    "worst_case_max_p": 1.0
+   }
+  }
+ },
+ "reading": "Both metric families agree and both are far larger, in relative terms, than the n=120 smoke-scale numbers: tf-idf top-1 grows 156x -> 283x -> 318x chance across steps 5000/10000/14000 (worst-case p=0.0003, the permutation floor, at every step); semantic top-1 grows 143x -> 249x -> 277x chance over the same steps (same p-floor). The shuffle control at step 14000 collapses cleanly to exactly chance on both metrics (tfidf 0.0x p=1.0, semantic 1.0x p=0.64). No-injection reproduces the expected degenerate 1/24-unique collapse. This is now a full-scale, like-for-like confirmation of \u00a7F193's relabel effect, not merely a smoke-scale one."
+}

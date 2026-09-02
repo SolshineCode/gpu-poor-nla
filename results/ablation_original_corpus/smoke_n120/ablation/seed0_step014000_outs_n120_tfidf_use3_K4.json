@@ -1,0 +1,64 @@
+{
+ "obs_doc_top1": 0.0,
+ "n_docs": 120,
+ "chance": 0.008333333333333333,
+ "K_seeds": 4,
+ "N_PERM": 3000,
+ "per_seed": [
+  {
+   "seed": 0,
+   "null_mean": 0.008466666666666666,
+   "null_std": 0.008362770230367801,
+   "p_value": 1.0,
+   "z": -1.0124236864608764
+  },
+  {
+   "seed": 1,
+   "null_mean": 0.008366666666666666,
+   "null_std": 0.00805644439540771,
+   "p_value": 1.0,
+   "z": -1.0385061020711919
+  },
+  {
+   "seed": 2,
+   "null_mean": 0.008316666666666667,
+   "null_std": 0.008374879766964485,
+   "p_value": 1.0,
+   "z": -0.9930490821467677
+  },
+  {
+   "seed": 3,
+   "null_mean": 0.008225,
+   "null_std": 0.008317336034073874,
+   "p_value": 1.0,
+   "z": -0.9888983642497433
+  }
+ ],
+ "worst_case": {
+  "max_p_value": 1.0,
+  "min_z": -1.0385061020711919,
+  "mean_null_mean": 0.00834375,
+  "se_null_mean": 5.0389110926865805e-05
+ },
+ "effect_LCB_95": -0.008504110639895764,
+ "sample_outputs": [
+  "<explanation>\nCharged lepton decay via tagged-decay channel measured with CLEO-c detector\n</explanation> <",
+  "<explanation>\nBrake upgrade cost and testing dilemma with Rotora BBK brakes\n</explanation> <contact>",
+  "<explanation>\n2000 Douglas settlement clause may grant Diandra more money\n</explanation> <concept>",
+  "<explanation>\nObeo Designer 5.0 Viewpoint-based specification of system problems\n</explanation>",
+  "<explanation>\nMo initials MV initials club, President initials VP\n</explanation>\n\nMo initials MV initials club,",
+  "<explanation>\nSurvey response distributions by country: Britain, Canada, France, Germany\n</explanation>\n\nBritain:"
+ ],
+ "mode": "tfidf",
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed0_step014000_outs_n120.pkl",
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed0_014000"
+ },
+ "n": 120,
+ "n_unique_outputs": 112
+}

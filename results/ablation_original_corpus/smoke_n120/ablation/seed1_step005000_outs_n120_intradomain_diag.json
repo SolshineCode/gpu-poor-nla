@@ -1,0 +1,90 @@
+{
+ "source_pkl": "/tmp/claude-1000/-home-darkstar/d2a4b02e-490d-42dd-91e8-763059231bc1/scratchpad/ablation_eval_scored/seed1_step005000_outs_n120.pkl",
+ "parquet": "/home/darkstar/deception-nanochat-sae-research/experiments/v8_nla_local/data/stage3_balanced/f194_ablation_eval_subset120_seed42.parquet",
+ "n": 120,
+ "injection": {
+  "inject_mode": "embed",
+  "inject_pos": 90,
+  "injection_scale": 39.191835884530846,
+  "control": "none",
+  "decoding": "greedy",
+  "checkpoint": "/tmp/ckpt_seed1_005000"
+ },
+ "domains": {
+  "medicine": 25,
+  "reviews": 43,
+  "science": 52
+ },
+ "N_PERM": 1000,
+ "modes": {
+  "tfidf": {
+   "domain_routing_top1": 0.45,
+   "routing_chance": 0.35958333333333337,
+   "routing_p": 0.015984015984015984,
+   "routing_null_mean": 0.3443416666666667,
+   "within_domain_mean_percentile": 0.49513013538748835,
+   "wd_chance": 0.5,
+   "wd_p": 0.3626373626373626,
+   "wd_null_mean": 0.49941202147525676,
+   "wd_null_std": 0.013735656656593221,
+   "gen_pairwise_sim_same_domain": 0.035696655700737975,
+   "gen_pairwise_sim_cross_domain": 0.022489137199157967
+  },
+  "semantic": {
+   "error": "Failed to import transformers.trainer because of the following error (look up to see its traceback):\ncannot import name 'is_mlu_available' from 'accelerate.utils' (/home/darkstar/research-pt113/lib/python3.10/site-packages/accelerate/utils/__init__.py)"
+  }
+ },
+ "duplication": {
+  "n_unique": 80,
+  "n_rows_in_dup_groups": 59,
+  "per_domain_unique": {
+   "medicine": 20,
+   "reviews": 35,
+   "science": 35
+  },
+  "dup_pair_same_domain_frac": 0.5882352941176471,
+  "dup_pair_same_domain_chance": 0.3542016806722689,
+  "top_dup_outputs": [
+   {
+    "text": "<explanation>\nAlabama: Southeastern US state bordered by Tennessee, Georgia, Flo",
+    "count": 8,
+    "domains": {
+     "science": 6,
+     "medicine": 2
+    }
+   },
+   {
+    "text": "<explanation>\nAnti-body-camera argument: footage storage strains police budgets\n",
+    "count": 5,
+    "domains": {
+     "science": 3,
+     "reviews": 1,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nBrain complexity and Crick's vision of targeting individual neuron",
+    "count": 5,
+    "domains": {
+     "science": 4,
+     "medicine": 1
+    }
+   },
+   {
+    "text": "<explanation>\nHelen Wan discusses workplace diversity in The Partner Track\n</exp",
+    "count": 4,
+    "domains": {
+     "science": 4
+    }
+   },
+   {
+    "text": "<explanation>\nAchilles: greatest Greek warrior of Trojan War in Homer's Iliad\n</",
+    "count": 4,
+    "domains": {
+     "science": 2,
+     "medicine": 2
+    }
+   }
+  ]
+ }
+}
