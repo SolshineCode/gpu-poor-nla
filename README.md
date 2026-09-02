@@ -109,6 +109,13 @@ is isolated but "label style alone" is not (a row-matched relabel is queued); th
 routing-vs-content decomposition has not been extracted for these checkpoints; and the
 checkpoint is not yet on Hugging Face (release under the `Solshine` namespace pending).
 
+![Correcting the supervision: relabeled corpus vs original, same recipe, same 580 held-out documents](figures/fig_nla_relabel_comparison.png)
+
+The figure above (`figures/fig_nla_relabel_comparison.png`) is generated from the
+JSONs in `results/relabel_v1/` and `results/ablation_original_corpus/`;
+`figures/fig_nla_checkpoint_landscape.png` is the paper's every-checkpoint
+overview with the relabel result added on a log axis.
+
 `verify_claims.py` now also checks these numbers. It additionally lists, as failures,
 the round-2 and follow-up files the methodology paper cites that have not yet been
 copied into `results/` from the source project's private provenance backup; see
