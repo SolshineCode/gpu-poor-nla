@@ -121,3 +121,24 @@ the round-2 and follow-up files the methodology paper cites that have not yet be
 copied into `results/` from the source project's private provenance backup; see
 `results/PENDING_FROM_BACKUP.md` for the manifest. The script will report a clean run
 only once those land, which is deliberate.
+
+## Update 2026-09-05: three figures regenerated after an independent review
+
+An independent review of the paper draft found three figures whose labeling did not
+match the text. They are replaced here with the versions the paper now uses; the
+underlying result files are unchanged.
+
+- `figures/fig_nla_routing_vs_content.png`: the base decoder's routing and content
+  axes are now separate, labeled panels (top-1 accuracy against the 0.359 neighborhood
+  prior; mean own-document percentile against the 0.5 chance line), each with its own
+  permutation p. Both axes beat chance at n=580; they differ in effect size (16.5 vs
+  5.2 points), not in significance. Earlier versions of the paper described the
+  content axis as "at chance"; that wording came from a smaller, earlier test.
+- `figures/fig_nla_ood_survival.png`: now shows the pooled (n=295) and pure
+  out-of-distribution (n=236) paired dense500-vs-base comparisons on both channels with
+  the paired p-values the text relies on (semantic 0.017 / 0.048; tf-idf 0.030 / 0.080).
+  The 295 rows include 59 in-distribution controls; on the 236 pure-OOD rows the tf-idf
+  mean percentile is slightly worse than chance for both arms (0.524 / 0.531).
+- `figures/fig_nla_dose_response.png`: the annotated paired p for the 500-to-1000-step
+  continuation is now the two-sided value the text reports (1.5e-7; the previous
+  annotation carried the one-sided 7.3e-8).
